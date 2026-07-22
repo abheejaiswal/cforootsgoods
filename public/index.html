@@ -1,0 +1,2924 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("294eaefa-9ca6-4cf4-969b-2666846b641a") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("7f547437-3053-4cd1-a558-474110ea6a48") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("40a590dd-a4eb-4667-a156-780c186f5a71") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("4c9cefd9-806e-43ab-ac58-02eb88b5171f") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("30e08c39-4487-44bb-aef3-6b1f92eb39f9") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("c2647712-9964-4973-a039-f4499acb7114") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("294eaefa-9ca6-4cf4-969b-2666846b641a") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("7f547437-3053-4cd1-a558-474110ea6a48") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("40a590dd-a4eb-4667-a156-780c186f5a71") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("4c9cefd9-806e-43ab-ac58-02eb88b5171f") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("30e08c39-4487-44bb-aef3-6b1f92eb39f9") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("c2647712-9964-4973-a039-f4499acb7114") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("294eaefa-9ca6-4cf4-969b-2666846b641a") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("7f547437-3053-4cd1-a558-474110ea6a48") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("40a590dd-a4eb-4667-a156-780c186f5a71") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("4c9cefd9-806e-43ab-ac58-02eb88b5171f") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("30e08c39-4487-44bb-aef3-6b1f92eb39f9") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("c2647712-9964-4973-a039-f4499acb7114") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("294eaefa-9ca6-4cf4-969b-2666846b641a") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("7f547437-3053-4cd1-a558-474110ea6a48") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("40a590dd-a4eb-4667-a156-780c186f5a71") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("4c9cefd9-806e-43ab-ac58-02eb88b5171f") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("30e08c39-4487-44bb-aef3-6b1f92eb39f9") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("c2647712-9964-4973-a039-f4499acb7114") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("294eaefa-9ca6-4cf4-969b-2666846b641a") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("7f547437-3053-4cd1-a558-474110ea6a48") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("40a590dd-a4eb-4667-a156-780c186f5a71") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("4c9cefd9-806e-43ab-ac58-02eb88b5171f") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("30e08c39-4487-44bb-aef3-6b1f92eb39f9") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("c2647712-9964-4973-a039-f4499acb7114") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+
+
+<title>ROOTSGOODS – Financial Manager</title>
+
+<style>
+:root{
+  --bg:#f3f5ef; --surface:#ffffff; --surface-2:#f7f9f3; --surface-3:#eef1e8;
+  --border:#e4e8dd; --border-strong:#d6dcc9;
+  --text:#242c26; --text-2:#5b645b; --text-3:#8b948a;
+  --green:#5f8a1e; --green-dark:#4c7015; --green-soft:#eef4e0; --green-tint:#f4f8ea; --green-text:#4c7015;
+  --brown:#6f4a24;
+  --red:#d24b4b; --red-soft:#fbecec; --credit:#1f9d57; --credit-soft:#eafaf1;
+  --amber:#c07d12; --amber-soft:#fcf3e2;
+  --shadow:0 1px 2px rgba(30,40,25,.04),0 2px 8px rgba(30,40,25,.05);
+  --shadow-lg:0 8px 30px rgba(30,40,25,.12);
+  --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);height:100vh;overflow:hidden;font-size:13px;-webkit-font-smoothing:antialiased}
+a{color:var(--green-text);text-decoration:none}
+a:hover{color:var(--green-dark);text-decoration:underline}
+::-webkit-scrollbar{width:9px;height:9px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:#d7ddca;border-radius:6px;border:2px solid var(--bg)}::-webkit-scrollbar-thumb:hover{background:#c3cbb0}
+#app{display:flex;height:100vh}
+#sb{width:230px;background:var(--surface);border-right:1px solid var(--border);display:flex;flex-direction:column;padding:20px 12px 14px;flex-shrink:0}
+.logo{padding:2px 8px 16px;margin-bottom:8px;border-bottom:1px solid var(--border)}
+.logo img{height:30px;width:auto;display:block}
+.logo h1{font-size:14px;font-weight:800;color:var(--text);letter-spacing:.5px}
+.logo p{font-size:10.5px;color:var(--text-3);margin-top:5px;font-weight:600;letter-spacing:.3px}
+.nav-item{display:flex;align-items:center;gap:11px;padding:10px 13px;cursor:pointer;font-size:13px;color:var(--text-2);border-radius:10px;font-weight:600;transition:all .15s;margin-bottom:2px}
+.nav-item:hover{color:var(--text);background:var(--surface-3)}
+.nav-item.active{color:var(--green-dark);background:var(--green-soft);font-weight:700}
+.sb-foot{margin-top:auto;padding:13px 12px 4px;border-top:1px solid var(--border);font-size:10.5px;color:var(--text-3);line-height:1.8}
+#main{flex:1;overflow:auto;background:var(--bg)}
+.view{display:none;padding:26px 30px}
+.view.active{display:block}
+.page-title{font-size:22px;font-weight:800;color:var(--text);letter-spacing:-.3px}
+.page-sub{font-size:12.5px;color:var(--text-3);margin-top:4px;margin-bottom:22px;font-weight:500}
+.card{background:var(--surface);border-radius:var(--radius);padding:18px 20px;border:1px solid var(--border);margin-bottom:14px;box-shadow:var(--shadow)}
+.card-title{font-size:11px;font-weight:800;color:var(--text-3);margin-bottom:14px;text-transform:uppercase;letter-spacing:.7px}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:14px}
+.stat{background:var(--surface);border-radius:var(--radius);padding:16px 18px;border:1px solid var(--border);box-shadow:var(--shadow)}
+.stat-label{font-size:10.5px;color:var(--text-3);font-weight:800;text-transform:uppercase;letter-spacing:.5px}
+.stat-val{font-size:23px;font-weight:800;color:var(--text);margin-top:7px;font-variant-numeric:tabular-nums;letter-spacing:-.5px}
+.stat-sub{font-size:11px;color:var(--text-3);margin-top:4px;font-weight:500}
+.two-col{display:grid;grid-template-columns:3fr 2fr;gap:14px;margin-bottom:14px}
+.two-col-eq{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.two-col-rev{display:grid;grid-template-columns:2fr 1fr;gap:14px}
+.filters{display:flex;gap:9px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
+input[type=text],input[type=file],select,textarea{background:var(--surface);border:1px solid var(--border-strong);border-radius:9px;padding:8px 12px;font-size:12.5px;color:var(--text);outline:none;font-family:inherit;transition:border-color .15s,box-shadow .15s}
+input[type=text]:focus,select:focus,textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px var(--green-soft)}
+select{cursor:pointer;color:var(--text-2)}
+.search-wrap{flex:1;min-width:180px}
+.tbl-wrap{border-radius:var(--radius);overflow-x:auto;border:1px solid var(--border);background:var(--surface);box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse}
+th{padding:11px 11px;text-align:left;color:var(--text-3);font-weight:800;font-size:10.5px;border-bottom:1px solid var(--border);background:var(--surface-2);text-transform:uppercase;letter-spacing:.5px;white-space:nowrap}
+td{padding:10px 11px;border-bottom:1px solid var(--border);vertical-align:middle}
+tbody tr{transition:background .12s}
+tbody tr:hover{background:var(--surface-2)}
+tr:last-child td{border-bottom:none}
+.td-date{color:var(--text-2);white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:600}
+.td-desc{max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text)}
+.td-debit{color:var(--red);font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.td-credit{color:var(--credit);font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.cat-sel,.ccat-sel,.rd-sel{background:var(--surface-2);border-radius:7px;padding:4px 5px;font-size:10.5px;cursor:pointer;border-width:1px;border-style:solid;max-width:138px;color:var(--text)}
+.inv-inp{background:var(--surface-2);border:1px solid var(--border);border-radius:7px;padding:4px 7px;font-size:10.5px;color:var(--text-2);width:66px;outline:none}
+.inv-inp:focus{border-color:var(--green)}
+.vchr-btn{background:var(--surface);border:1px solid var(--border-strong);border-radius:7px;padding:4px 10px;font-size:10.5px;color:var(--text-2);cursor:pointer;font-weight:600}
+.vchr-btn:hover{border-color:var(--green);color:var(--green-dark)}
+.vchr-done{background:var(--credit-soft);color:var(--credit);border-radius:7px;padding:3px 8px;font-size:10.5px;font-weight:700}
+.pager{display:flex;justify-content:space-between;align-items:center;margin-top:14px}
+.pg-btn{background:var(--surface);border:1px solid var(--border-strong);border-radius:9px;padding:7px 15px;font-size:12.5px;color:var(--text-2);cursor:pointer;font-weight:600;font-family:inherit}
+.pg-btn:hover:not(:disabled){border-color:var(--green);color:var(--green-dark)}
+.pg-btn:disabled{opacity:.4;cursor:default}
+.btn{background:var(--surface);border:1px solid var(--border-strong);border-radius:10px;padding:8px 16px;font-size:12.5px;color:var(--text-2);cursor:pointer;font-family:inherit;font-weight:600;transition:all .15s}
+.btn:hover{border-color:var(--green);color:var(--green-dark)}
+.btn-blue{background:var(--green);border:1px solid var(--green);color:#fff}
+.btn-blue:hover{background:var(--green-dark);border-color:var(--green-dark);color:#fff}
+.btn-green{background:var(--credit);border:1px solid var(--credit);color:#fff}
+.btn-green:hover{background:#188a4b;color:#fff}
+svg text{font-family:'Manrope',system-ui,sans-serif}
+.legend{display:flex;gap:16px;justify-content:center;margin-top:10px;flex-wrap:wrap}
+.legend-item{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text-2);font-weight:600}
+.legend-dot{width:9px;height:9px;border-radius:3px;flex-shrink:0}
+.pie-legend{margin-top:10px}
+.pie-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);font-size:11.5px;align-items:center}
+.rep-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);font-size:12.5px}
+.rep-indent{padding-left:16px;font-size:11.5px;color:var(--text-2)}
+.rep-total{font-weight:800;border-top:2px solid var(--border-strong);border-bottom:none!important;margin-top:4px;padding-top:10px!important;color:var(--text)}
+.rep-cols{display:flex;gap:24px;font-size:11.5px}
+.rd-box{margin-top:14px;background:var(--green-tint);border-radius:11px;padding:14px;border:1px solid var(--green-soft)}
+.rd-box-title{font-size:10.5px;color:var(--green-dark);font-weight:800;text-transform:uppercase;letter-spacing:.4px;margin-bottom:9px}
+.rd-box-row{display:flex;justify-content:space-between;font-size:11.5px;padding:4px 0;border-bottom:1px solid rgba(95,138,30,.12)}
+.modal-bg{display:none;position:fixed;inset:0;background:rgba(30,40,25,.45);backdrop-filter:blur(3px);z-index:100;align-items:center;justify-content:center}
+.modal-bg.open{display:flex}
+.modal-box{background:var(--surface);border-radius:18px;padding:26px;width:540px;border:1px solid var(--border);max-height:90vh;overflow-y:auto;box-shadow:var(--shadow-lg)}
+.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.modal-title{font-size:16px;font-weight:800;color:var(--text)}
+.modal-close{background:none;border:none;color:var(--text-3);cursor:pointer;font-size:24px;line-height:1}
+.modal-close:hover{color:var(--text)}
+.drop-zone{border:2px dashed var(--border-strong);border-radius:12px;padding:30px;text-align:center;cursor:pointer;transition:border-color .2s,background .2s;margin-bottom:16px;background:var(--surface-2)}
+.drop-zone:hover,.drop-zone.dragover{border-color:var(--green);background:var(--green-tint)}
+.drop-zone p{color:var(--text-2);font-size:13px;margin-top:8px}
+.drop-zone span{font-size:30px}
+.format-guide{background:var(--surface-2);border-radius:11px;padding:14px;font-size:11.5px;color:var(--text-2);margin-bottom:16px;line-height:1.8;border:1px solid var(--border)}
+.format-guide code{color:var(--text);font-size:10.5px;display:block;margin-top:5px;font-family:'SFMono-Regular',ui-monospace,monospace;background:var(--surface-3);padding:6px 8px;border-radius:6px}
+.preview-tbl{width:100%;border-collapse:collapse;font-size:11.5px;margin-bottom:16px}
+.preview-tbl th{padding:8px;background:var(--surface-2);color:var(--text-3);text-align:left;font-weight:700}
+.preview-tbl td{padding:6px 8px;border-bottom:1px solid var(--border);color:var(--text)}
+.import-status{padding:11px 14px;border-radius:10px;font-size:12.5px;margin-bottom:16px;font-weight:600}
+.status-ok{background:var(--credit-soft);color:#137a41;border:1px solid #bfe8cf}
+.status-warn{background:var(--amber-soft);color:#96610d;border:1px solid #f0dcae}
+.modal-actions{display:flex;gap:10px;margin-top:16px}
+.btn-primary{flex:1;background:var(--green);border:none;border-radius:11px;padding:12px;color:#fff;font-weight:800;font-size:13.5px;cursor:pointer;font-family:inherit;transition:background .15s}
+.btn-primary:hover{background:var(--green-dark)}
+.btn-secondary{background:var(--surface);border:1px solid var(--border-strong);border-radius:11px;padding:12px 18px;font-size:13.5px;color:var(--text-2);cursor:pointer;font-family:inherit;font-weight:600}
+.btn-secondary:hover{border-color:var(--green);color:var(--green-dark)}
+.vp-company{font-size:15px;font-weight:800;color:var(--text);letter-spacing:.5px}
+.vp-addr{font-size:10.5px;color:var(--text-3);margin:3px 0 14px}
+.vp-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;font-size:11.5px}
+.vp-label{color:var(--text-3);font-size:9.5px;font-weight:800;text-transform:uppercase;letter-spacing:.4px}
+.vp-val{color:var(--text);margin-top:2px;font-weight:600}
+.vp-desc{margin-top:11px;padding-top:11px;border-top:1px solid var(--border);font-size:11.5px;color:var(--text-2)}
+.form-field{margin-bottom:11px}
+.form-label{font-size:10.5px;color:var(--text-3);font-weight:700;margin-bottom:4px}
+.modal-inp{width:100%;padding:9px 12px;background:var(--surface);border:1px solid var(--border-strong);border-radius:9px;font-size:12.5px;color:var(--text);outline:none;font-family:inherit}
+.modal-inp:focus{border-color:var(--green);box-shadow:0 0 0 3px var(--green-soft)}
+.rev-highlight{background:var(--credit-soft);border:1px solid #cbecd8;border-radius:var(--radius);padding:18px 20px;margin-bottom:14px}
+#login-wrap{position:fixed;inset:0;background:linear-gradient(150deg,#eef3e4 0%,#f5f6f0 55%,#eef2f4 100%);z-index:9999;display:flex;align-items:center;justify-content:center}
+#login-wrap.hidden{display:none}
+.login-box{background:var(--surface);border-radius:22px;padding:40px 36px;width:400px;border:1px solid var(--border);text-align:center;box-shadow:0 20px 60px rgba(40,60,25,.13)}
+.login-box img.login-brand{height:38px;width:auto;margin:0 auto 6px;display:block}
+.login-logo{font-size:22px;font-weight:800;color:var(--text);letter-spacing:.5px}
+.login-sub{font-size:12px;color:var(--text-3);margin:8px 0 30px;font-weight:600}
+.login-field{text-align:left;margin-bottom:16px}
+.login-label{display:block;font-size:11.5px;color:var(--text-2);font-weight:700;margin-bottom:6px}
+.login-inp{width:100%;padding:12px 14px;background:var(--surface-2);border:1px solid var(--border-strong);border-radius:11px;font-size:13.5px;color:var(--text);outline:none;font-family:inherit;transition:border-color .15s,box-shadow .15s}
+.login-inp:focus{border-color:var(--green);box-shadow:0 0 0 3px var(--green-soft);background:var(--surface)}
+.login-btn{width:100%;background:var(--green);border:none;border-radius:11px;padding:13px;color:#fff;font-weight:800;font-size:14.5px;cursor:pointer;font-family:inherit;margin-top:10px;letter-spacing:.3px;transition:background .15s}
+.login-btn:hover{background:var(--green-dark)}
+.login-err{color:var(--red);font-size:12.5px;margin-top:12px;min-height:18px;font-weight:600}
+.login-hint{background:var(--surface-2);border-radius:11px;padding:14px;font-size:11.5px;color:var(--text-2);margin-top:18px;text-align:left;line-height:1.9;border:1px solid var(--border)}
+.rb{display:inline-block;padding:3px 10px;border-radius:20px;font-size:10px;font-weight:800;letter-spacing:.4px;text-transform:uppercase}
+.rb-ceo{background:var(--amber-soft);color:#a86a0c}
+.rb-ca{background:var(--green-soft);color:var(--green-dark)}
+.rb-ja{background:#e4f2f7;color:#0e7490}
+.user-row{display:flex;align-items:center;gap:15px;padding:15px 18px;border-bottom:1px solid var(--border)}
+.user-row:last-child{border-bottom:none}
+.uavatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0}
+.pwd-pill{font-family:ui-monospace,'SFMono-Regular',monospace;font-size:11.5px;color:var(--text-2);background:var(--surface-2);border:1px solid var(--border);border-radius:7px;padding:4px 9px;letter-spacing:1px}
+.drange{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+input[type=date]{background:var(--surface);border:1px solid var(--border-strong);border-radius:9px;padding:8px 10px;font-size:12.5px;color:var(--text);outline:none;cursor:pointer;font-family:inherit}
+input[type=date]:focus{border-color:var(--green);box-shadow:0 0 0 3px var(--green-soft)}
+input[type=date]::-webkit-calendar-picker-indicator{filter:none;opacity:.55;cursor:pointer}
+.dl-btn{background:var(--green);border:1px solid var(--green);border-radius:9px;padding:8px 15px;font-size:12.5px;color:#fff;cursor:pointer;white-space:nowrap;font-family:inherit;font-weight:700}
+.dl-btn:hover{background:var(--green-dark)}
+.user-bar{display:flex;align-items:center;justify-content:space-between;padding:12px 30px;border-bottom:1px solid var(--border);background:var(--surface);font-size:12.5px}
+.logout-btn{background:var(--surface);border:1px solid var(--border-strong);border-radius:9px;padding:8px 13px;font-size:11.5px;color:var(--text-2);cursor:pointer;font-family:inherit;font-weight:700;width:100%;transition:all .15s}
+.logout-btn:hover{color:var(--red);border-color:#e6bcbc;background:var(--red-soft)}
+.ca-section{background:var(--surface);border-radius:var(--radius);border:1px solid var(--border);margin-bottom:16px;overflow:hidden;box-shadow:var(--shadow)}
+.ca-sec-head{background:var(--surface-2);padding:14px 20px;font-size:11.5px;font-weight:800;color:var(--text-2);text-transform:uppercase;letter-spacing:.6px;display:flex;align-items:center;gap:9px;border-bottom:1px solid var(--border)}
+.ca-sec-body{padding:18px 20px}
+.ca-ta{width:100%;background:var(--surface-2);border:1px solid var(--border-strong);border-radius:10px;padding:12px 14px;font-size:12.5px;color:var(--text);outline:none;resize:vertical;min-height:84px;font-family:inherit;line-height:1.7}
+.ca-ta:focus{border-color:var(--green);box-shadow:0 0 0 3px var(--green-soft)}
+.ca-tbl{width:100%;border-collapse:collapse;font-size:12.5px}
+.ca-tbl th{padding:9px 12px;text-align:left;color:var(--text-3);font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--border);background:var(--surface-2)}
+.ca-tbl td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:middle}
+.ca-tbl tr:last-child td{border-bottom:none}
+.ca-inp{background:var(--surface-2);border:1px solid var(--border);border-radius:7px;padding:5px 9px;font-size:11.5px;color:var(--text);outline:none;width:100%;font-family:inherit}
+.ca-inp:focus{border-color:var(--green)}
+.ca-sel{background:var(--surface-2);border:1px solid var(--border);border-radius:7px;padding:5px 8px;font-size:11.5px;color:var(--text);cursor:pointer;font-family:inherit}
+.pri-high{color:var(--red);font-weight:700}
+.pri-med{color:var(--amber);font-weight:700}
+.pri-low{color:var(--credit);font-weight:600}
+.sta-open{color:var(--amber);font-weight:600}.sta-progress{color:var(--green-dark);font-weight:600}.sta-done{color:var(--credit);font-weight:600}.sta-overdue{color:var(--red);font-weight:700}
+.con-ok{color:var(--credit);font-weight:700}.con-pending{color:var(--amber);font-weight:700}.con-overdue{color:var(--red);font-weight:800}
+.ca-auto-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:0}
+.ca-auto-card{background:var(--surface-2);border-radius:11px;padding:13px 16px;border:1px solid var(--border)}
+.ca-auto-label{font-size:10.5px;color:var(--text-3);font-weight:800;text-transform:uppercase;letter-spacing:.4px}
+.ca-auto-val{font-size:19px;font-weight:800;color:var(--text);margin-top:5px;font-variant-numeric:tabular-nums}
+.ca-auto-sub{font-size:10.5px;color:var(--text-3);margin-top:3px}
+</style>
+</head>
+<body>
+<div id="login-wrap">
+  <div class="login-box">
+    <img class="login-brand" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20210%2040%22%3E%3Cg%20transform%3D%22translate(2%2C6)%22%3E%3Crect%20x%3D%220%22%20y%3D%2214%22%20width%3D%227%22%20height%3D%2214%22%20rx%3D%221.5%22%20fill%3D%22%23d24b4b%22%2F%3E%3Crect%20x%3D%229%22%20y%3D%228%22%20width%3D%227%22%20height%3D%2220%22%20rx%3D%221.5%22%20fill%3D%22%235f8a1e%22%2F%3E%3Crect%20x%3D%2218%22%20y%3D%223%22%20width%3D%227%22%20height%3D%2225%22%20rx%3D%221.5%22%20fill%3D%22%235f8a1e%22%2F%3E%3Crect%20x%3D%2227%22%20y%3D%2211%22%20width%3D%227%22%20height%3D%2217%22%20rx%3D%221.5%22%20fill%3D%22%23d24b4b%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%2242%22%20y%3D%2227%22%20font-family%3D%22Manrope%2Csystem-ui%2Csans-serif%22%20font-size%3D%2220%22%20font-weight%3D%22800%22%20fill%3D%22%23242c26%22%20letter-spacing%3D%220.5%22%3EROOTSGOODS%3C%2Ftext%3E%3C%2Fsvg%3E" alt="RootsGoods">
+    <div class="login-sub">Financial Management System</div>
+    <div class="login-field"><label class="login-label">Username</label>
+      <input class="login-inp" id="l-user" type="text" placeholder="Enter username" autocomplete="username" onkeydown="if(event.key==='Enter')doLogin()">
+    </div>
+    <div class="login-field"><label class="login-label">Password</label>
+      <input class="login-inp" id="l-pass" type="password" placeholder="Enter password" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()">
+    </div>
+    <button class="login-btn" onclick="doLogin()">Sign In</button>
+    <div class="login-err" id="l-err"></div>
+    <div id="l-hint" class="login-hint" style="display:none"></div>
+    <div style="margin-top:12px;text-align:center">
+      <button onclick="resetApp()" style="background:none;border:none;color:#d6dcc9;cursor:pointer;font-size:10px;text-decoration:underline">Having trouble? Reset app data</button>
+    </div>
+  </div>
+</div>
+
+<div id="app" style="display:none">
+  <div id="sb">
+    <div class="logo"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20210%2040%22%3E%3Cg%20transform%3D%22translate(2%2C6)%22%3E%3Crect%20x%3D%220%22%20y%3D%2214%22%20width%3D%227%22%20height%3D%2214%22%20rx%3D%221.5%22%20fill%3D%22%23d24b4b%22%2F%3E%3Crect%20x%3D%229%22%20y%3D%228%22%20width%3D%227%22%20height%3D%2220%22%20rx%3D%221.5%22%20fill%3D%22%235f8a1e%22%2F%3E%3Crect%20x%3D%2218%22%20y%3D%223%22%20width%3D%227%22%20height%3D%2225%22%20rx%3D%221.5%22%20fill%3D%22%235f8a1e%22%2F%3E%3Crect%20x%3D%2227%22%20y%3D%2211%22%20width%3D%227%22%20height%3D%2217%22%20rx%3D%221.5%22%20fill%3D%22%23d24b4b%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%2242%22%20y%3D%2227%22%20font-family%3D%22Manrope%2Csystem-ui%2Csans-serif%22%20font-size%3D%2220%22%20font-weight%3D%22800%22%20fill%3D%22%23242c26%22%20letter-spacing%3D%220.5%22%3EROOTSGOODS%3C%2Ftext%3E%3C%2Fsvg%3E" alt="RootsGoods"><p>Financial Manager</p></div>
+    <div class="nav-item active" data-view="dashboard" onclick="nav(this,'dashboard')">⊞ &nbsp;Dashboard</div>
+    <div class="nav-item" data-view="transactions" onclick="nav(this,'transactions')">☰ &nbsp;Transactions</div>
+    <div class="nav-item" data-view="reports" onclick="nav(this,'reports')">◫ &nbsp;Reports</div>
+    <div class="nav-item" data-view="banking" onclick="nav(this,'banking')">🏦 &nbsp;Banking &amp; Interest</div>
+    <div class="nav-item" data-view="revenue" onclick="nav(this,'revenue')">◈ &nbsp;Revenue Analysis</div>
+    <div class="nav-item" id="nav-ca" data-view="ca" onclick="nav(this,'ca')" style="display:none">📋 &nbsp;CA Summary</div>
+    <div class="nav-item" id="nav-users" data-view="users" onclick="nav(this,'users')" style="display:none">⚙ &nbsp;Manage Users</div>
+    <div class="sb-foot">
+      <div id="sb-user-info" style="margin-bottom:8px"></div>
+      <button class="logout-btn" style="margin-top:8px;width:100%" onclick="doLogout()">Sign Out</button>
+    </div>
+  </div>
+  <div id="main">
+    <div id="view-dashboard" class="view active"></div>
+    <div id="view-transactions" class="view"></div>
+    <div id="view-reports" class="view"></div>
+    <div id="view-banking" class="view"></div>
+    <div id="view-revenue" class="view"></div>
+    <div id="view-users" class="view"></div>
+    <div id="view-ca" class="view"></div>
+  </div>
+</div>
+
+<!-- Upload Modal -->
+<div id="upload-modal" class="modal-bg">
+  <div class="modal-box" style="width:580px">
+    <div class="modal-head">
+      <span class="modal-title">📁 Upload Bank Statement</span>
+      <button class="modal-close" onclick="closeModal('upload-modal')">×</button>
+    </div>
+    <div class="format-guide">
+      <strong style="color:#5b645b">How to upload your statement:</strong><br>
+      <strong style="color:#4c7015">PDF:</strong> Upload directly — SBI and Federal Bank PDFs are both supported.<br>
+      <strong style="color:#5b645b">CSV/Excel:</strong> Export from Net Banking → Account Statement → Download as CSV.
+      Expected columns (in any order):
+      <code>Txn Date, Description, Debit, Credit, Balance</code>
+      Amounts in Indian format (e.g. 2,89,795.00) are handled automatically.
+    </div>
+    <div class="drop-zone" id="drop-zone" onclick="document.getElementById('file-inp').click()">
+      <span>📄</span>
+      <p><strong style="color:#4c7015">Click to browse</strong> or drag &amp; drop your statement here</p>
+      <p style="font-size:11px;margin-top:4px">Supports: <strong style="color:#c07d12">PDF</strong> (SBI &amp; Federal Bank) · CSV · TXT</p>
+    </div>
+    <input type="file" id="file-inp" accept=".pdf,.csv,.txt,.xls,.xlsx" style="display:none" onchange="handleFileSelect(this)">
+    <div id="upload-preview"></div>
+    <div class="modal-actions">
+      <button class="btn-primary" id="confirm-import-btn" style="display:none" onclick="confirmImport()">✓ Import Transactions</button>
+      <button class="btn-secondary" onclick="closeModal('upload-modal')">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- Voucher Modal -->
+<div id="voucher-modal" class="modal-bg">
+  <div class="modal-box">
+    <div class="modal-head">
+      <span class="modal-title">Generate Voucher</span>
+      <button class="modal-close" onclick="closeModal('voucher-modal')">×</button>
+    </div>
+    <div id="voucher-content"></div>
+  </div>
+</div>
+
+<!-- Ledger Modal -->
+<div id="ledger-modal" class="modal-bg">
+  <div class="modal-box" style="width:560px">
+    <div class="modal-head">
+      <span class="modal-title">📒 Manage Ledgers</span>
+      <button class="modal-close" onclick="closeLedgerModal()">×</button>
+    </div>
+    <div id="ledger-content"></div>
+  </div>
+</div>
+
+<script>
+// ─────────────────────────────────────────────────────────────────────────────
+// CONSTANTS
+// ─────────────────────────────────────────────────────────────────────────────
+// ── API client (talks to the backend; replaces browser storage) ──────────────
+(function(){
+  const BASE = window.__API_BASE__ || '';        // same-origin by default
+  async function req(method, path, body){
+    const opt = { method, credentials:'include', headers:{} };
+    if (body !== undefined){ opt.headers['Content-Type']='application/json'; opt.body=JSON.stringify(body); }
+    const res = await fetch(BASE + path, opt);
+    const txt = await res.text();
+    let data = null; try { data = txt ? JSON.parse(txt) : null; } catch(e){ data = txt; }
+    if (!res.ok){
+      const err = new Error((data && data.error) || res.statusText || ('HTTP '+res.status));
+      err.status = res.status; throw err;
+    }
+    return data;
+  }
+  window.API = {
+    get:  (p)    => req('GET', p),
+    post: (p, b) => req('POST', p, b === undefined ? {} : b),
+    put:  (p, b) => req('PUT', p, b === undefined ? {} : b),
+    patch:(p, b) => req('PATCH', p, b === undefined ? {} : b),
+    del:  (p)    => req('DELETE', p),
+    toast: function(msg){
+      try {
+        let d = document.getElementById('__api_toast');
+        if (!d){ d = document.createElement('div'); d.id='__api_toast';
+          d.style.cssText='position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#d24b4b;color:#fff;padding:10px 16px;border-radius:8px;font:13px/1.4 system-ui,sans-serif;z-index:99999;box-shadow:0 4px 14px rgba(0,0,0,.2)';
+          document.body.appendChild(d);
+        }
+        d.textContent = msg; d.style.display='block';
+        clearTimeout(window.__api_toast_t);
+        window.__api_toast_t = setTimeout(()=>{ d.style.display='none'; }, 4000);
+      } catch(e){ console.error(msg); }
+    }
+  };
+})();
+
+
+const DEFAULT_CATS = [
+  {v:"",             l:"— Uncategorized —",              c:"#6b756d"},
+  {v:"raw_materials",l:"Raw Materials / Procurement",    c:"#c07d12"},
+  {v:"salary",       l:"Salary & Wages",                 c:"#8b5cf6"},
+  {v:"rent",         l:"Rent",                           c:"#06b6d4"},
+  {v:"it",           l:"IT Expenses",                    c:"#5f8a1e"},
+  {v:"outsourcing",  l:"Outsourcing",                    c:"#1f9d57"},
+  {v:"banking",      l:"Banking / Interest / Charges",   c:"#d24b4b"},
+  {v:"insurance",    l:"Insurance",                      c:"#f97316"},
+  {v:"loan",         l:"Loan Repayment",                 c:"#ec4899"},
+  {v:"intra_company",l:"Intra-Company Transfer",         c:"#5b645b"},
+  {v:"other",        l:"Other Expense",                  c:"#6366f1"},
+];
+
+const DEFAULT_CREDIT_CATS = [
+  {v:"",             l:"— Unclassified Credit —",        c:"#6b756d"},
+  {v:"govt_project", l:"Revenue – Govt Project",         c:"#1f9d57"},
+  {v:"maize_sales",  l:"Sales – Maize / Millets",        c:"#c07d12"},
+  {v:"input_sales",  l:"Sales – Input",                  c:"#f97316"},
+  {v:"warehouse_sw", l:"Revenue – Warehouse Software",   c:"#5f8a1e"},
+  {v:"refund",       l:"Refund / Reversal",               c:"#8b5cf6"},
+  {v:"intra_in",     l:"Intra-Company Transfer In",      c:"#5b645b"},
+  {v:"other_credit", l:"Other Credit",                   c:"#6366f1"},
+];
+
+// User-created ledgers (accounting heads) — persisted, merged with built-ins
+const LEDGER_KEY="rg_ledgers";
+const LEDGER_PALETTE=["#0e7490","#b45309","#7c3aed","#be185d","#15803d","#a16207","#4338ca","#b91c1c","#0f766e","#92400e"];
+let CUSTOM_LEDGERS={exp:[],cr:[]};
+let CATS=[], CREDIT_CATS=[], CM={}, CCM={};
+function rebuildLedgers(){
+  CATS=[...DEFAULT_CATS,...CUSTOM_LEDGERS.exp];
+  CREDIT_CATS=[...DEFAULT_CREDIT_CATS,...CUSTOM_LEDGERS.cr];
+  CM=Object.fromEntries(CATS.map(c=>[c.v,c]));
+  CCM=Object.fromEntries(CREDIT_CATS.map(c=>[c.v,c]));
+}
+function loadLedgers(){ rebuildLedgers(); }
+async function saveLedgers(){ rebuildLedgers(); try{ await API.put('/api/ledgers', CUSTOM_LEDGERS); }catch(e){ API.toast('Could not save ledgers: '+e.message); } }
+function ledgerSlug(label,type){
+  const base=(type==="cr"?"cr_":"ex_")+label.toLowerCase().replace(/[^a-z0-9]+/g,"_").replace(/^_+|_+$/g,"").slice(0,30);
+  let v=base,i=2; while(CM[v]||CCM[v]) v=base+"_"+(i++); return v;
+}
+loadLedgers();
+
+const MONTHS = {jan:"01",feb:"02",mar:"03",apr:"04",may:"05",jun:"06",
+                jul:"07",aug:"08",sep:"09",oct:"10",nov:"11",dec:"12"};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// AUTO-CATEGORIZE
+// ─────────────────────────────────────────────────────────────────────────────
+function autoCat(d) {
+  const s = d.toLowerCase();
+  if (/debit interest|penal charges|a\/c keeping|nesl|transfer charges|arrear interest|part period inter|chrg\/imps|chrg\/irctc/.test(s)) return "banking";
+  if (/insurance/.test(s)) return "insurance";
+  if (/withdrawal transfer|loan recovery|o\.s\. deposit|npb repayment/.test(s)) return "loan";
+  if (/vision trading|maize|millet|haveri zilla|farmer producer|shri adhishakthi|thammanna|girish s|renukamma|umesha|bhoosiri|krushik|matral|madnoor|subhash|shankarappa|shivappa|kubera|vinay k|mahantesh|gangadhara|rtg\/ashok i|pkgb|roquette/.test(s)) return "raw_materials";
+  if (/rootsgoods opc|rootsgoods private limited|rtg\/rootsgo|nft\/rootsgoods/.test(s)) return "intra_company";
+  if (/sachin/.test(s)) return "loan";
+  if (/zoho|adobe systems|linkedin|openai|chatgpt|claude\.ai|netflix|googleplay|google.*ads|amazon internet|atria convergence|microsb|lepton soft|facebook india/.test(s)) return "it";
+  if (/aghub found|aghub/.test(s)) return "outsourcing";
+  if (/meghamg|bhoomika h|pradhyumna|nirmala m|santosh b b|k r harish|anand pasch|vishal dev|rajalakshmi|prakash m h|salary dec|qp\/salary/.test(s)) return "salary";
+  if (/wipo|ompi|o\.m\.p\.i/.test(s)) return "other";
+  if (/nandi service|petrol|petroleum|fuel|service station|mahanth motors/.test(s)) return "other";
+  if (/zomato|swiggy|blinkit|restaurant|food/.test(s)) return "other";
+  if (/etihad|airbnb|air india|flight/.test(s)) return "other";
+  return "";
+}
+function autoRd(c) { return c==="raw_materials"||c==="it" ? "rd" : c===""?"":"non-rd"; }
+
+function autoCreditCat(d) {
+  const s = d.toLowerCase();
+  if (/rootsgoods opc|rootsgoods private limited|tfr:.*rootsgoods|rtg.*rootsgoods pvt|nft.*rootsgoods pvt/.test(s)) return "intra_in";
+  if (/sbi general insurance/.test(s)) return "refund";
+  if (/itdtax refund|fednet refund|visadrefund/.test(s)) return "refund";
+  if (/roquette india|hsbcn/.test(s)) return "maize_sales";
+  if (/iit ropar/.test(s)) return "govt_project";
+  if (/cashfree|yfbk/.test(s)) return "warehouse_sw";
+  if (/maize|millet/.test(s)) return "maize_sales";
+  if (/sachin/.test(s)) return "other_credit";
+  return "other_credit";
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// RAW DATA
+// ─────────────────────────────────────────────────────────────────────────────
+const RAW_DATA = [
+  ["t001","2024-01-01","TO TRANSFER - Maize buying (IMPS)",319725,0],
+  ["t002","2024-01-01","TO TRANSFER - Mr. MANJUNATHA S",7500,0],
+  ["t003","2024-01-01","TO TRANSFER - Loaders (IMPS)",4410,0],
+  ["t004","2024-01-01","TO TRANSFER - Vehicle payment (IMPS)",4000,0],
+  ["t005","2024-01-03","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,386000],
+  ["t006","2024-01-03","BY TRANSFER - ROOTSGOODS OPC PVT LTD (NEFT)",0,100000],
+  ["t007","2024-01-03","BY TRANSFER - ROOTSGOODS OPC PVT LTD (NEFT) #2",0,102000],
+  ["t008","2024-01-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t009","2024-01-05","BY TRANSFER - Mr. SACHIN H.D. (Repayment)",0,500000],
+  ["t010","2024-01-06","TO TRANSFER - Syed Yusuf (NEFT)",13000,0],
+  ["t011","2024-01-06","CHEQUE DEPOSIT - SRI VINAYAKA TRADERS",282700,0],
+  ["t012","2024-01-08","BY TRANSFER - Mr. SACHIN H.D. (Repayment) #2",0,500000],
+  ["t013","2024-01-12","TO TRANSFER - Mr. Chethan K G",9000,0],
+  ["t014","2024-01-29","DEBIT - 2023 NESL charges",295,0],
+  ["t015","2024-01-30","DEBIT - 2022 NESL charges",128,0],
+  ["t016","2024-01-31","DEBIT INTEREST",9889,0],
+  ["t017","2024-01-31","PENAL CHARGES CC OD",762,0],
+  ["t018","2024-02-14","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t019","2024-02-14","TO TRANSFER - Vinay K (RTGS)",242650,0],
+  ["t020","2024-02-15","TO TRANSFER - Idris Ahmed (NEFT)",12000,0],
+  ["t021","2024-02-16","TO TRANSFER - Mr. MANJUNATHA S",5500,0],
+  ["t022","2024-02-16","TO TRANSFER - Loaders (IMPS)",2985,0],
+  ["t023","2024-02-20","TO TRANSFER - Loan Recovery",38000,0],
+  ["t024","2024-02-29","DEBIT INTEREST",8518,0],
+  ["t025","2024-02-29","PENAL CHARGES CC OD",1169,0],
+  ["t026","2024-03-01","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,300000],
+  ["t027","2024-03-01","BY TRANSFER - ROOTSGOODS OPC PVT LTD (NEFT)",0,230000],
+  ["t028","2024-03-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t029","2024-03-07","TO TRANSFER - Shri Adhishakthi Trading Co (RTGS)",400000,0],
+  ["t030","2024-03-07","TO TRANSFER - Shri Adhishakthi Trading Co (NEFT)",172329,0],
+  ["t031","2024-03-12","A/C Keeping Charges",649,0],
+  ["t032","2024-03-14","TO TRANSFER - Shri Adhishakthi Trading Co (RTGS) #2",400000,0],
+  ["t033","2024-03-14","TO TRANSFER - Shri Adhishakthi Trading Co (RTGS) #3",296000,0],
+  ["t034","2024-03-21","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,500000],
+  ["t035","2024-03-21","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS) #2",0,204260],
+  ["t036","2024-03-22","TO TRANSFER - Shri Adhishakthi Trading Co (RTGS) #4",400000,0],
+  ["t037","2024-03-22","TO TRANSFER - Shri Adhishakthi Trading Co (RTGS) #5",225454,0],
+  ["t038","2024-03-27","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,500000],
+  ["t039","2024-03-27","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,9000],
+  ["t040","2024-03-28","TO TRANSFER - Adhishakthi Trading Co (RTGS)",400000,0],
+  ["t041","2024-03-28","TO TRANSFER - Adhishakthi Trading Co (RTGS) #2",268291,0],
+  ["t042","2024-03-29","TO TRANSFER - Matral Farmer Producer Co (RTGS)",400000,0],
+  ["t043","2024-03-29","TO TRANSFER - Matral Farmer Producer Co (NEFT)",4179,0],
+  ["t044","2024-03-31","TO TRANSFER - Haleshi Shannappa Muddallavar (NEFT)",70370,0],
+  ["t045","2024-03-31","DEBIT INTEREST",14670,0],
+  ["t046","2024-04-02","TO TRANSFER - Mr. VILLASA KUMARA",121500,0],
+  ["t047","2024-04-02","TO TRANSFER - Bhoomika (NEFT)",115799,0],
+  ["t048","2024-04-02","TO TRANSFER - Shivaputhrappa (NEFT)",119460,0],
+  ["t049","2024-04-02","TO TRANSFER - Shambulingappa (NEFT)",111000,0],
+  ["t050","2024-04-03","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,500000],
+  ["t051","2024-04-03","TO TRANSFER - Mr. Shivakumara Naik",24980,0],
+  ["t052","2024-04-03","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,47000],
+  ["t053","2024-04-03","TO TRANSFER - Ganesh (NEFT)",105000,0],
+  ["t054","2024-04-03","TO TRANSFER - Basamma (NEFT)",69539,0],
+  ["t055","2024-04-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t056","2024-04-05","TO TRANSFER - Basavaraja (NEFT)",35500,0],
+  ["t057","2024-04-05","TO TRANSFER - Shivaraj S (NEFT)",153800,0],
+  ["t058","2024-04-06","TO TRANSFER - Ganesh Goudra (NEFT)",198101,0],
+  ["t059","2024-04-07","TO TRANSFER - Prakash KK (NEFT)",69486,0],
+  ["t060","2024-04-08","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,500000],
+  ["t061","2024-04-08","BY TRANSFER - ROOTSGOODS OPC PVT LTD (NEFT)",0,81000],
+  ["t062","2024-04-18","TO TRANSFER - Sanganna Kusnur (NEFT)",80017,0],
+  ["t063","2024-04-22","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,400000],
+  ["t064","2024-04-22","BY TRANSFER - ROOTSGOODS OPC (NEFT) #2",0,204000],
+  ["t065","2024-04-23","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,351901],
+  ["t066","2024-04-23","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,69486],
+  ["t067","2024-04-23","TRANSFER CHARGES",18408,0],
+  ["t068","2024-04-30","DEBIT INTEREST",22755,0],
+  ["t069","2024-04-30","PENAL CHARGES CC OD",1247,0],
+  ["t070","2024-05-01","TO TRANSFER - Shankarappa Banapanavar (RTGS)",228000,0],
+  ["t071","2024-05-01","TO TRANSFER - Shivappa Shakunavalli (RTGS)",250000,0],
+  ["t072","2024-05-03","TO TRANSFER - Kubera Naik (RTGS)",218510,0],
+  ["t073","2024-05-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t074","2024-05-13","TO TRANSFER - Mr. VILLASA KUMARA",5350,0],
+  ["t075","2024-05-14","TO TRANSFER - Mallamma (NEFT)",122990,0],
+  ["t076","2024-05-14","TO TRANSFER - Kusuma (NEFT)",113288,0],
+  ["t077","2024-05-15","TO TRANSFER - Maize buying (IMPS)",186004,0],
+  ["t078","2024-05-15","TO TRANSFER - Praveen (NEFT)",33616,0],
+  ["t079","2024-05-15","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,448000],
+  ["t080","2024-05-24","TO TRANSFER (Cheque)",17343,0],
+  ["t081","2024-05-25","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,449000],
+  ["t082","2024-05-31","DEBIT INTEREST",22416,0],
+  ["t083","2024-06-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t084","2024-06-05","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,221651],
+  ["t085","2024-06-05","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS) #2",0,238618],
+  ["t086","2024-06-21","TO TRANSFER - Stamp paper (IMPS)",2100,0],
+  ["t087","2024-06-23","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,197000],
+  ["t088","2024-06-30","DEBIT INTEREST",14113,0],
+  ["t089","2024-06-30","PENAL CHARGES CC OD",979,0],
+  ["t090","2024-07-03","TO TRANSFER INB (Cheque)",9762,0],
+  ["t091","2024-07-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t092","2024-07-17","BY TRANSFER - ROOTSGOODS OPC PVT LTD (NEFT)",0,500000],
+  ["t093","2024-07-23","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,500000],
+  ["t094","2024-07-31","DEBIT INTEREST",8140,0],
+  ["t095","2024-08-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t096","2024-08-31","DEBIT INTEREST",2124,0],
+  ["t097","2024-09-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t098","2024-09-30","DEBIT INTEREST",2257,0],
+  ["t099","2024-10-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t100","2024-10-22","BY TRANSFER - Mr. SACHIN H.D. (TRF LOAN AC 905)",0,15000],
+  ["t101","2024-10-31","DEBIT INTEREST",787,0],
+  ["t102","2024-11-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t103","2024-11-05","TO TRANSFER - Thammanna T (RTGS)",201910,0],
+  ["t104","2024-11-05","TO TRANSFER - Thammanna T (NEFT)",134837,0],
+  ["t105","2024-11-06","TO TRANSFER - Umesh Yallappaanan (RTGS)",339552,0],
+  ["t106","2024-11-06","TO TRANSFER - Girish S Gummanal (RTGS)",400000,0],
+  ["t107","2024-11-06","TO TRANSFER - Girish S Gummanal (NEFT)",71600,0],
+  ["t108","2024-11-13","TO TRANSFER - Maize (IMPS)",126914,0],
+  ["t109","2024-11-13","TO TRANSFER - Haveri Zilla FPC Ltd (NEFT)",119593,0],
+  ["t110","2024-11-13","TO TRANSFER - Haveri Zilla FPC Ltd (NEFT) #2",45612,0],
+  ["t111","2024-11-13","TO TRANSFER - Haveri Zilla FPC Ltd (RTGS)",200139,0],
+  ["t112","2024-11-13","TO TRANSFER - Haveri Zilla FPC Ltd (NEFT) #3",40539,0],
+  ["t113","2024-11-15","TO TRANSFER - Haveri Zilla FPC Ltd (NEFT) #4",15951,0],
+  ["t114","2024-11-18","TO TRANSFER - Haveri Zilla FPC Ltd (NEFT) #5",11000,0],
+  ["t115","2024-11-29","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,500000],
+  ["t116","2024-11-29","TO TRANSFER - Haveri Zilla FPC Ltd (NEFT) #6",5176,0],
+  ["t117","2024-11-29","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,56800],
+  ["t118","2024-11-29","BY TRANSFER - ROOTSGOODS OPC (NEFT) #2",0,10000],
+  ["t119","2024-11-30","DEBIT INTEREST",14105,0],
+  ["t120","2024-12-03","TO TRANSFER - MAHANTESH (NEFT)",398188,0],
+  ["t121","2024-12-03","TO TRANSFER - Mr. GANGADHARA CHANAV",544236,0],
+  ["t122","2024-12-04","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,500000],
+  ["t123","2024-12-04","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS) #2",0,328352],
+  ["t124","2024-12-04","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS) #3",0,367000],
+  ["t125","2024-12-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t126","2024-12-05","TO TRANSFER - Renukamma (RTGS)",230823,0],
+  ["t127","2024-12-05","TO TRANSFER - Subhash Veerabhadrappa (RTGS)",242550,0],
+  ["t128","2024-12-18","TO TRANSFER - Umesha (RTGS)",500000,0],
+  ["t129","2024-12-31","DEBIT INTEREST",17955,0],
+  ["t130","2025-01-04","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,482570],
+  ["t131","2025-01-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t132","2025-01-08","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,500000],
+  ["t133","2025-01-08","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,86445],
+  ["t134","2025-01-08","TO TRANSFER - Bangaresh (NEFT)",86445,0],
+  ["t135","2025-01-14","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,400000],
+  ["t136","2025-01-14","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,500000],
+  ["t137","2025-01-31","TRANSFER CHARGES",10000,0],
+  ["t138","2025-01-31","TRANSFER CHARGES #2",8408,0],
+  ["t139","2025-01-31","DEBIT INTEREST",8232,0],
+  ["t140","2025-01-31","PENAL CHARGES CC OD",320,0],
+  ["t141","2025-02-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t142","2025-02-28","DEBIT INTEREST",3196,0],
+  ["t143","2025-03-04","TO TRANSFER - Mr. SACHIN H.D. #1",220000,0],
+  ["t144","2025-03-04","TO TRANSFER - Mr. SACHIN H.D. #2",220000,0],
+  ["t145","2025-03-04","TO TRANSFER - Mr. SACHIN H.D. #3",220000,0],
+  ["t146","2025-03-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t147","2025-03-13","A/C Keeping Charges",649,0],
+  ["t148","2025-03-19","TO TRANSFER - RootsGoods Private Limited (NEFT)",100000,0],
+  ["t149","2025-03-19","TO TRANSFER - RootsGoods Private Limited (NEFT) #2",100000,0],
+  ["t150","2025-03-25","TO TRANSFER - RootsGoods Private Limited (NEFT) #3",100000,0],
+  ["t151","2025-03-28","TO TRANSFER - Madnoor Farmer Producer Co Lim (NEFT)",169785,0],
+  ["t152","2025-03-31","DEBIT INTEREST",10426,0],
+  ["t153","2025-04-02","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,200000],
+  ["t154","2025-04-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t155","2025-04-25","TO TRANSFER - Krushik Mitra FPC Ltd (RTGS)",397136,0],
+  ["t156","2025-04-26","TO TRANSFER - Krushik Mitra FPC Ltd (NEFT)",17604,0],
+  ["t157","2025-04-30","DEBIT INTEREST",12835,0],
+  ["t158","2025-05-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t159","2025-05-14","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,420000],
+  ["t160","2025-05-14","BY TRANSFER - ROOTSGOODS OPC (NEFT) #2",0,182000],
+  ["t161","2025-05-31","DEBIT INTEREST",13209,0],
+  ["t162","2025-06-04","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,200000],
+  ["t163","2025-06-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t164","2025-06-13","DEBIT - Insurance Premium",15489,0],
+  ["t165","2025-06-30","DEBIT INTEREST",9135,0],
+  ["t166","2025-07-01","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,180000],
+  ["t167","2025-07-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t168","2025-07-11","TO TRANSFER - RootsGoods Private Limited (NEFT)",100000,0],
+  ["t169","2025-07-11","TO TRANSFER - RootsGoods Private Limited (NEFT) #2",100000,0],
+  ["t170","2025-07-15","BY TRANSFER - SBI GENERAL INSURANCE (CMP)",0,15489],
+  ["t171","2025-07-23","TO TRANSFER - RootsGoods Private Limited (NEFT) #3",100000,0],
+  ["t172","2025-07-31","DEBIT INTEREST",9151,0],
+  ["t173","2025-08-01","TO TRANSFER - RootsGoods Private Limited (NEFT)",100000,0],
+  ["t174","2025-08-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t175","2025-08-09","TO TRANSFER - RootsGoods Private Limited (NEFT) #2",100000,0],
+  ["t176","2025-08-11","TO TRANSFER - RootsGoods Private Limited (NEFT) #3",100000,0],
+  ["t177","2025-08-11","TO TRANSFER - RootsGoods Private Limited (NEFT) #4",100000,0],
+  ["t178","2025-08-31","DEBIT INTEREST",13178,0],
+  ["t179","2025-09-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t180","2025-09-08","TO TRANSFER - RootsGoods Private Limited (NEFT)",100000,0],
+  ["t181","2025-09-08","TO TRANSFER - RootsGoods Private Limited (NEFT) #2",100000,0],
+  ["t182","2025-09-20","TO TRANSFER - RootsGoods Private Limited (NEFT) #3",100000,0],
+  ["t183","2025-09-29","TO TRANSFER - RootsGoods Private Limited (NEFT) #4",100000,0],
+  ["t184","2025-09-29","TO TRANSFER - RootsGoods Private Limited (NEFT) #5",100000,0],
+  ["t185","2025-09-29","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,15000],
+  ["t186","2025-09-30","DEBIT INTEREST",15470,0],
+  ["t187","2025-10-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t188","2025-10-05","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,200000],
+  ["t189","2025-10-05","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS) #2",0,400000],
+  ["t190","2025-10-05","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS) #3",0,200000],
+  ["t191","2025-10-15","TO TRANSFER - Vision Trading Company (RTGS)",362723,0],
+  ["t192","2025-10-31","DEBIT INTEREST",15020,0],
+  ["t193","2025-11-01","TO TRANSFER - Vision Trading Company (RTGS)",337604,0],
+  ["t194","2025-11-03","TO TRANSFER - Vision Trading Company (RTGS)",322335,0],
+  ["t195","2025-11-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t196","2025-11-09","TO TRANSFER - Vision Trading Company (RTGS)",326340,0],
+  ["t197","2025-11-13","TO TRANSFER - Vision Trading Company (RTGS)",315721,0],
+  ["t198","2025-11-15","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,500000],
+  ["t199","2025-11-15","BY TRANSFER - ROOTSGOODS OPC (NEFT) #2",0,149262],
+  ["t200","2025-11-15","BY TRANSFER - ROOTSGOODS OPC (NEFT) #3",0,309010],
+  ["t201","2025-11-29","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,314604],
+  ["t202","2025-11-29","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,335497],
+  ["t203","2025-11-29","TO TRANSFER INB",31442,0],
+  ["t204","2025-11-30","DEBIT INTEREST",19062,0],
+  ["t205","2025-12-01","TO TRANSFER - Vision Trading Company (RTGS)",243455,0],
+  ["t206","2025-12-01","TO TRANSFER - Mrs. Pavitra Ningappa (Invoice)",284151,0],
+  ["t207","2025-12-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t208","2025-12-11","TO TRANSFER - Vision Trading Company (RTGS)",355515,0],
+  ["t209","2025-12-15","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,325188],
+  ["t210","2025-12-15","TO TRANSFER - Mrs. Pavitra Ningappa #2",5000,0],
+  ["t211","2025-12-15","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,193700],
+  ["t212","2025-12-17","TO TRANSFER (IMPS)",295550,0],
+  ["t213","2025-12-19","TO TRANSFER - Vision Trading Company (RTGS)",307318,0],
+  ["t214","2025-12-22","TO TRANSFER - Vision Trading Company (RTGS)",289542,0],
+  ["t215","2025-12-24","TO TRANSFER - Vision Trading Company (RTGS)",252411,0],
+  ["t216","2025-12-25","TO TRANSFER - Vision Trading Company (RTGS)",289023,0],
+  ["t217","2025-12-25","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,338558],
+  ["t218","2025-12-27","TO TRANSFER - Vision Trading Company (RTGS)",290200,0],
+  ["t219","2025-12-31","DEBIT INTEREST",21117,0],
+  ["t220","2026-01-02","TO TRANSFER - Vision Trading Company (RTGS)",289795,0],
+  ["t221","2026-01-03","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,310000],
+  ["t222","2026-01-03","TO TRANSFER - Vision Trading Company (RTGS)",309250,0],
+  ["t223","2026-01-03","TO TRANSFER - Vision Trading Company (RTGS) #2",290180,0],
+  ["t224","2026-01-08","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,500000],
+  ["t225","2026-01-08","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS) #2",0,500000],
+  ["t226","2026-01-08","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,500000],
+  ["t227","2026-01-08","BY TRANSFER - ROOTSGOODS OPC (NEFT) #2",0,252744],
+  ["t228","2026-01-09","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t229","2026-01-10","TO TRANSFER - Vision Trading Company (RTGS)",288833,0],
+  ["t230","2026-01-12","TO TRANSFER - Vision Trading Company (RTGS)",288833,0],
+  ["t231","2026-01-12","TO TRANSFER - Vision Trading Company (RTGS) #2",288750,0],
+  ["t232","2026-01-13","TO TRANSFER - Vision Trading Company (NEFT)",72400,0],
+  ["t233","2026-01-14","TO TRANSFER - Vision Trading Company (RTGS)",259564,0],
+  ["t234","2026-01-20","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,289765],
+  ["t235","2026-01-30","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,500000],
+  ["t236","2026-01-30","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS) #2",0,500000],
+  ["t237","2026-01-31","DEBIT - Insurance Premium",15489,0],
+  ["t238","2026-01-31","DEBIT INTEREST",26217,0],
+  ["t239","2026-01-31","PENAL CHARGES CC OD",1712,0],
+  ["t240","2026-02-02","BY TRANSFER - ROOTSGOODS OPC PVT LTD (RTGS)",0,500000],
+  ["t241","2026-02-02","BY TRANSFER - ROOTSGOODS OPC (NEFT)",0,29321],
+  ["t242","2026-02-07","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+  ["t243","2026-02-18","TO TRANSFER - RootsGoods Private Limited (NEFT)",100000,0],
+  ["t244","2026-02-18","TO TRANSFER - RootsGoods Private Limited (NEFT) #2",100000,0],
+  ["t245","2026-02-18","TO TRANSFER - RootsGoods Private Limited (NEFT) #3",87192,0],
+  ["t246","2026-02-18","TO TRANSFER - RootsGoods Private Limited (RTGS)",299681,0],
+  ["t247","2026-02-18","TO TRANSFER - Basavaraj Mallappa Umarani (NEFT)",194722,0],
+  ["t248","2026-02-21","TO TRANSFER - RootsGoods Private Limited (RTGS)",273240,0],
+  ["t249","2026-02-21","BY TRANSFER - Mr. SACHIN H D",0,40000],
+  ["t250","2026-02-28","DEBIT INTEREST",15112,0],
+  ["t251","2026-02-28","PENAL CHARGES CC OD",569,0],
+  ["t252","2026-03-04","TO TRANSFER - Bhoosiri Millets Farmers Producers (NEFT)",236987,0],
+  ["t253","2026-03-05","WITHDRAWAL TRANSFER - Loan EMI",19900,0],
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+// STATE & STORAGE
+// ─────────────────────────────────────────────────────────────────────────────
+let TXNS = [];
+let page = 0;
+function indianFY(){
+  const n=new Date(),y=n.getFullYear(),m=n.getMonth()+1;
+  const s=m>=4?`${y}-04-01`:`${y-1}-04-01`;
+  const e=m>=4?`${y+1}-03-31`:`${y}-03-31`;
+  const t=n.toISOString().slice(0,10);
+  return{from:s,to:t<e?t:e};
+}
+const _fy=indianFY();
+let fSearch="",fCat="all",fRd="all",fDateFrom=_fy.from,fDateTo=_fy.to,fType="all",fAcct="all";
+// All distinct account labels present in the data (dynamic — grows as statements are imported)
+function allAccounts(){
+  const s=new Set(TXNS.map(t=>t.acct||"SBI CC"));
+  return [...s].sort();
+}
+let pendingImport = [];
+const PP = 30;
+
+function initTxns() { TXNS = []; }               // data is loaded from the server after login
+function save() {}                               // no-op: each mutation is persisted via the API
+function updTxn(id, patch) {
+  const t = TXNS.find(x => x.id === id);
+  if (t) {
+    Object.assign(t, patch);                     // optimistic local update
+    API.patch('/api/txns/' + encodeURIComponent(id), patch)
+       .catch(e => API.toast('Save failed: ' + e.message));
+  }
+}
+
+
+// ─────────────────────────────────────────────────────────────────────────────
+// HELPERS
+// ─────────────────────────────────────────────────────────────────────────────
+const esc = s => { const d=document.createElement("div"); d.textContent=String(s||""); return d.innerHTML; };
+const fmt = n => "₹" + Math.abs(Math.round(n)).toLocaleString("en-IN");
+const fK  = n => Math.abs(n)>=100000 ? "₹"+(Math.abs(n)/100000).toFixed(1)+"L" : fmt(n);
+const getYears = () => [...new Set(TXNS.map(t=>t.date.slice(0,4)))].sort();
+
+function yearSel(val, fn, label="All Years") {
+  return `<select onchange="${fn}" style="background:#ffffff;border:1px solid #d6dcc9;border-radius:6px;padding:6px 10px;font-size:12px;color:#5b645b;cursor:pointer">
+    <option value="all" ${val==="all"?"selected":""}>${label}</option>
+    ${getYears().map(y=>`<option value="${y}" ${val===y?"selected":""}>${y}</option>`).join("")}
+  </select>`;
+}
+
+function getMonthly(txns) {
+  const m={};
+  txns.forEach(t=>{
+    const k=t.date.slice(0,7);
+    if(!m[k]) m[k]={k,label:new Date(k+"-15").toLocaleDateString("en-IN",{month:"short",year:"2-digit"}),debit:0,credit:0};
+    m[k].debit+=t.debit; m[k].credit+=t.credit;
+  });
+  return Object.values(m).sort((a,b)=>a.k.localeCompare(b.k));
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// PDF PARSING (Federal Bank + SBI via PDF.js from CDN)
+// ─────────────────────────────────────────────────────────────────────────────
+const PDFJS_URL=(window.__resources&&window.__resources.pdfjs)||'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
+const PDFJS_WRK=(window.__resources&&window.__resources.pdfjsWorker)||'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+async function loadPDFJS(){
+  if(window.pdfjsLib) return window.pdfjsLib;
+  const lib = await new Promise((res,rej)=>{
+    const s=document.createElement('script');
+    s.src=PDFJS_URL;
+    s.onload=()=>res(window['pdfjs-dist/build/pdf']);
+    s.onerror=()=>rej(new Error('Could not load PDF.js. Please check your internet connection.'));
+    document.head.appendChild(s);
+  });
+  // Create the worker ourselves from the (possibly inlined) worker code.
+  // Letting PDF.js load it via importScripts fails on file:// (null origin).
+  try{
+    const code=await (await fetch(PDFJS_WRK)).text();
+    const url=URL.createObjectURL(new Blob([code],{type:'text/javascript'}));
+    lib.GlobalWorkerOptions.workerPort=new Worker(url);
+  }catch(e){
+    // Fallback: hand PDF.js the URL and let it try (works when served over http)
+    lib.GlobalWorkerOptions.workerSrc=PDFJS_WRK;
+  }
+  window.pdfjsLib=lib;
+  return lib;
+}
+
+function grpPDFRows(items){
+  const s=[...items].sort((a,b)=>a.page!==b.page?a.page-b.page:Math.abs(a.y-b.y)>3?b.y-a.y:a.x-b.x);
+  const rows=[];let cur=null;
+  for(const it of s){
+    if(!cur||it.page!==cur.page||Math.abs(it.y-cur.y)>3){cur={page:it.page,y:it.y,items:[it]};rows.push(cur);}
+    else cur.items.push(it);
+  }
+  return rows.map(r=>r.items);
+}
+
+async function parsePDFFile(file){
+  const lib=await loadPDFJS();
+  const buf=await file.arrayBuffer();
+  const pdf=await lib.getDocument({data:buf}).promise;
+  const items=[];
+  for(let p=1;p<=pdf.numPages;p++){
+    const page=await pdf.getPage(p);
+    const tc=await page.getTextContent();
+    tc.items.forEach(it=>{if(it.str&&it.str.trim())items.push({str:it.str.trim(),x:it.transform[4],y:it.transform[5],page:p});});
+  }
+  const rows=grpPDFRows(items);
+  const allTxt=items.map(i=>i.str).join(' ');
+  const isFed=/federal bank|FDRL0/i.test(allTxt);
+  // Try to pull the account number off the statement itself
+  const acctNo=(allTxt.match(/(?:account\s*(?:no|number)\s*[:\-]?\s*|a\/c\s*(?:no)?\s*[:\-]?\s*)[X*\d]*?(\d{4,6})\b/i)||[])[1];
+  const tail=acctNo?` (...${acctNo.slice(-4)})`:"";
+  if(isFed){
+    // Federal Bank has two statement layouts — try both parsers, keep the better result
+    const t1=parseFederalPDF(rows);
+    const t2=parseFederalCA(allTxt);
+    const txns=t2.length>t1.length?t2:t1;
+    return {txns,acct:'Federal Bank'+(tail||' OPC (...1703)')};
+  }
+  return {txns:parseSBIPDF(rows),acct:'SBI'+(tail||' CC (...987782)')};
+}
+
+// Federal Bank "Current Account" layout: DD-MON-YYYY date, value date+time, particulars,
+// Tran Type C/D, optional cheque no, amount, balance
+function parseFederalCA(txt){
+  const M={JAN:'01',FEB:'02',MAR:'03',APR:'04',MAY:'05',JUN:'06',JUL:'07',AUG:'08',SEP:'09',OCT:'10',NOV:'11',DEC:'12'};
+  // Re-join dates the PDF text layer split across lines ("23-MAR-" + "2026")
+  txt=txt.replace(/(\d{2}-[A-Z]{3}-)\s+(\d{4})/g,'$1$2');
+  const re=/(\d{2})-([A-Z]{3})-(\d{4})\s+\d{2}-[A-Z]{3}-\d{2}\s+\d{2}:\d{2}:\d{2}\s*(?:AM|PM)?\s+(.*?)\s+([CD])\s+((?:[\d,]+(?:\.\d{1,2})?\s*){1,3})(?=\d{2}-[A-Z]{3}-\d{4}|GRAND\s+TOTAL|Page\s+\d|$)/g;
+  const txns=[];let m;
+  while((m=re.exec(txt))!==null){
+    const mo=M[m[2].toUpperCase()];if(!mo)continue;
+    const date=`${m[3]}-${mo}-${m[1]}`;
+    const desc=m[4].replace(/\s+/g,' ').trim();
+    const nums=m[6].trim().split(/\s+/).map(s=>parseFloat(s.replace(/,/g,''))).filter(n=>!isNaN(n));
+    if(!nums.length)continue;
+    // last number = balance, the one before it = txn amount (a cheque no may precede them)
+    const amt=nums.length>=2?nums[nums.length-2]:nums[0];
+    if(!amt)continue;
+    txns.push({date,desc:desc||'Federal Bank Txn',debit:m[5]==='D'?amt:0,credit:m[5]==='C'?amt:0});
+  }
+  return txns;
+}
+
+function parseFederalPDF(rows){
+  // Opening balance
+  let prev=null;
+  for(const r of rows){
+    const t=r.map(i=>i.str).join(' ');
+    const m=t.match(/Opening\s+Balance[^\d]*(\d[\d,]*\.\d{2})/i);
+    if(m){prev=parseFloat(m[1].replace(/,/g,''));break;}
+  }
+  // Withdrawal/Deposit column x-positions from header
+  let wX=null,dX=null;
+  for(const r of rows){
+    const t=r.map(i=>i.str.toLowerCase()).join(' ');
+    if(t.includes('withdrawals')&&t.includes('deposits')){
+      r.forEach(i=>{if(/withdrawals/i.test(i.str))wX=i.x;if(/^deposits$/i.test(i.str))dX=i.x;});break;
+    }
+  }
+  const FD=/^\d{2}\/\d{2}\/\d{4}$/;
+  const SKIP=/^(RTGS|NEFT|IB|TFR|IMPS|UPI|ATM|CLG|MB|CBDC|CDM|CASH|SBINT|CR|DR)$/;
+  const TID=/^[A-Z][A-Z0-9]{7,}$/;
+  const txns=[];
+  for(const row of rows){
+    if(!row[0]||!FD.test(row[0].str))continue;
+    const date=parseDate(row[0].str);if(!date)continue;
+    const amounts=[];const descArr=[];
+    row.forEach(it=>{
+      const s=it.str;
+      if(FD.test(s)||SKIP.test(s)||TID.test(s))return;
+      const n=parseFloat(s.replace(/,/g,''));
+      if(!isNaN(n)&&/^\d[\d,]*\.\d{2}$/.test(s)){amounts.push({val:n,x:it.x});}
+      else descArr.push(s);
+    });
+    if(amounts.length<2)continue;
+    const bal=amounts[amounts.length-1].val;
+    const txnAmt=amounts[amounts.length-2].val;
+    let deb=0,cre=0;
+    const tol=Math.max(2,txnAmt*0.005);
+    if(prev!==null){
+      const diff=bal-prev;
+      if(Math.abs(diff-txnAmt)<tol)cre=txnAmt;
+      else if(Math.abs(diff+txnAmt)<tol)deb=txnAmt;
+      else{
+        const ax=amounts[amounts.length-2].x;
+        if(wX!==null&&dX!==null){if(Math.abs(ax-wX)<Math.abs(ax-dX))deb=txnAmt;else cre=txnAmt;}
+        else{if(diff>0)cre=txnAmt;else deb=txnAmt;}
+      }
+    }else{
+      const ax=amounts[amounts.length-2].x;
+      if(wX!==null&&dX!==null){if(Math.abs(ax-wX)<Math.abs(ax-dX))deb=txnAmt;else cre=txnAmt;}
+      else cre=txnAmt;
+    }
+    prev=bal;
+    if(deb===0&&cre===0)continue;
+    txns.push({date,desc:descArr.join(' ').replace(/\s+/g,' ').trim()||'Federal Bank Txn',debit:deb,credit:cre});
+  }
+  return txns;
+}
+
+function parseSBIPDF(rows){
+  const txns=[];let prev=null;
+  for(const row of rows){
+    const head=row.slice(0,6).map(i=>i.str).join(' ');
+    const dm=head.match(/^(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{4})/i);
+    if(!dm)continue;
+    const mo=MONTHS[dm[2].toLowerCase()];if(!mo)continue;
+    const date=dm[3]+'-'+mo+'-'+dm[1].padStart(2,'0');
+    const amts=row.filter(i=>/^-?[\d,]+\.\d{2}$/.test(i.str.trim())).map(i=>({val:parseFloat(i.str.replace(/,/g,'')),x:i.x,str:i.str}));
+    if(!amts.length)continue;
+    const bal=amts[amts.length-1].val;
+    let deb=0,cre=0;
+    if(amts.length>=2){
+      const ta=Math.abs(amts[amts.length-2].val);
+      if(prev!==null){const diff=bal-prev;if(Math.abs(diff+ta)<2)deb=ta;else if(Math.abs(diff-ta)<2)cre=ta;else{if(diff<0)deb=ta;else cre=ta;}}
+      else{if(bal<0)deb=ta;else cre=ta;}
+    }
+    prev=bal;if(deb===0&&cre===0)continue;
+    const amtSet=new Set(amts.map(a=>a.str));
+    const descArr=row.filter(i=>!amtSet.has(i.str)&&!/^\d{1,2}$/.test(i.str.trim())&&!/^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)$/i.test(i.str)&&!/^\d{4}$/.test(i.str.trim()));
+    txns.push({date,desc:descArr.map(i=>i.str).join(' ').replace(/\s+/g,' ').trim()||'SBI Txn',debit:deb,credit:cre});
+  }
+  return txns;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CSV PARSER
+// ─────────────────────────────────────────────────────────────────────────────
+function parseLine(line) {
+  const r=[]; let cur="", inQ=false;
+  for(let i=0;i<line.length;i++){
+    if(line[i]==='"'){inQ=!inQ;}
+    else if((line[i]===','||line[i]==='\t')&&!inQ){r.push(cur.trim());cur="";}
+    else{cur+=line[i];}
+  }
+  r.push(cur.trim());
+  return r;
+}
+
+function parseDate(s) {
+  if(!s) return null;
+  s=s.trim().replace(/"/g,"");
+  let m;
+  // DD/MM/YYYY or DD-MM-YYYY
+  m=s.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})$/);
+  if(m) return `${m[3]}-${m[2].padStart(2,"0")}-${m[1].padStart(2,"0")}`;
+  // DD Mon YYYY
+  m=s.match(/^(\d{1,2})[- ]([a-zA-Z]{3})[- ](\d{4})$/);
+  if(m){const mo=MONTHS[m[2].toLowerCase()];if(mo)return`${m[3]}-${mo}-${m[1].padStart(2,"0")}`;}
+  // YYYY-MM-DD
+  if(/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
+  return null;
+}
+
+function parseAmt(s) {
+  if(!s) return 0;
+  const v=parseFloat(String(s).replace(/[₹,\s"]/g,"").replace(/[()]/g,"").trim());
+  return isNaN(v)?0:Math.abs(v);
+}
+
+function parseCSVText(text) {
+  const lines = text.replace(/\r\n/g,"\n").replace(/\r/g,"\n").split("\n").filter(l=>l.trim());
+  if(!lines.length) return {rows:[],error:"File appears empty."};
+
+  let hi=-1;
+  for(let i=0;i<Math.min(15,lines.length);i++){
+    const low=lines[i].toLowerCase();
+    if(low.includes("date")&&(low.includes("description")||low.includes("narration")||low.includes("particular")||low.includes("debit")||low.includes("credit"))){hi=i;break;}
+  }
+  if(hi===-1) return {rows:[],error:"Could not find a header row with Date/Description/Debit/Credit columns. Please ensure you downloaded the CSV from SBI."};
+
+  const headers=parseLine(lines[hi]).map(h=>h.toLowerCase().replace(/[^a-z ]/g,"").trim());
+  const ci={
+    date: headers.findIndex(h=>/txn.?date|date/.test(h)),
+    desc: headers.findIndex(h=>/description|narration|particular/.test(h)),
+    debit:headers.findIndex(h=>/\bdebit\b|withdrawal/.test(h)),
+    credit:headers.findIndex(h=>/\bcredit\b|deposit/.test(h)),
+  };
+  if(ci.date===-1||ci.desc===-1) return {rows:[],error:"Could not identify Date or Description columns."};
+
+  const rows=[];
+  for(let i=hi+1;i<lines.length;i++){
+    const cols=parseLine(lines[i]);
+    if(cols.length<2) continue;
+    const date=parseDate(cols[ci.date]);
+    const desc=(cols[ci.desc]||"").replace(/"/g,"").trim();
+    if(!date||!desc) continue;
+    const debit  = ci.debit >=0 ? parseAmt(cols[ci.debit])  : 0;
+    const credit = ci.credit>=0 ? parseAmt(cols[ci.credit]) : 0;
+    if(debit===0&&credit===0) continue;
+    rows.push({date,desc,debit,credit});
+  }
+  return {rows, error:null};
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SVG CHARTS (ht = height param to avoid clash with esc fn)
+// ─────────────────────────────────────────────────────────────────────────────
+function svgBars(data, w, ht, k1, k2, c1, c2) {
+  if(!data.length) return noData();
+  const mx=Math.max(...data.map(d=>Math.max(d[k1]||0,d[k2]||0)),1);
+  const barH=ht-40, n=data.length;
+  const slotW=(w-52)/n;
+  const bw=Math.max(2,Math.floor(slotW/2)-2);
+  let bars="",labels="",grid="";
+  for(let i=0;i<=4;i++){
+    const y=10+barH-(barH*i/4);
+    grid+=`<line x1="50" y1="${y}" x2="${w}" y2="${y}" stroke="#ffffff" stroke-width="1"/>`;
+    grid+=`<text x="48" y="${y+4}" text-anchor="end" fill="#8b948a" font-size="9">${fK(mx*i/4)}</text>`;
+  }
+  data.forEach((d,i)=>{
+    const x=52+i*slotW+slotW/2-bw;
+    const h2=Math.max(1,(d[k2]||0)/mx*barH), h1=Math.max(1,(d[k1]||0)/mx*barH);
+    bars+=`<rect x="${x}" y="${10+barH-h2}" width="${bw}" height="${h2}" fill="${c2}" rx="2"/>`;
+    bars+=`<rect x="${x+bw+1}" y="${10+barH-h1}" width="${bw}" height="${h1}" fill="${c1}" rx="2"/>`;
+    const lbl=(d.label||d.k||d.y||"").slice(0,6);
+    labels+=`<text x="${x+bw}" y="${ht-4}" text-anchor="middle" fill="#8b948a" font-size="9">${lbl}</text>`;
+  });
+  return `<svg width="${w}" height="${ht}" style="overflow:visible;display:block">${grid}${bars}${labels}</svg>`;
+}
+
+function svgHBars(data, w, ht) {
+  if(!data.length) return noData();
+  const mx=Math.max(...data.map(d=>d.value),1);
+  const rh=Math.max(14,Math.floor(ht/data.length)-4);
+  let out="";
+  data.forEach((d,i)=>{
+    const bw=Math.max(2,(d.value/mx)*(w-160));
+    const y=i*(rh+4);
+    const name=String(d.name||"").length>23?String(d.name||"").slice(0,23)+"…":String(d.name||"");
+    out+=`<rect x="155" y="${y}" width="${bw}" height="${rh}" fill="${d.color||"#6b756d"}" rx="2"/>`;
+    out+=`<text x="153" y="${y+rh/2+4}" text-anchor="end" fill="#5b645b" font-size="9">${name}</text>`;
+    out+=`<text x="${158+bw}" y="${y+rh/2+4}" fill="#242c26" font-size="9" font-weight="600">${fK(d.value)}</text>`;
+  });
+  const svgH=Math.max(ht,data.length*(rh+4));
+  return `<svg width="${w}" height="${svgH}" style="overflow:visible;display:block">${out}</svg>`;
+}
+
+function svgPie(data, size) {
+  if(!data.length||!data.reduce((s,d)=>s+d.value,0)) return noData();
+  const total=data.reduce((s,d)=>s+d.value,0);
+  const cx=size/2,cy=size/2,r=size/2-8,ir=size/2-28;
+  let angle=-Math.PI/2,out="";
+  data.forEach(d=>{
+    const sw=(d.value/total)*Math.PI*2;
+    if(sw<0.001) return;
+    const x1=cx+r*Math.cos(angle),y1=cy+r*Math.sin(angle);
+    const x2=cx+r*Math.cos(angle+sw),y2=cy+r*Math.sin(angle+sw);
+    const xi1=cx+ir*Math.cos(angle),yi1=cy+ir*Math.sin(angle);
+    const xi2=cx+ir*Math.cos(angle+sw),yi2=cy+ir*Math.sin(angle+sw);
+    const lg=sw>Math.PI?1:0;
+    out+=`<path d="M${xi1},${yi1} L${x1},${y1} A${r},${r} 0 ${lg},1 ${x2},${y2} L${xi2},${yi2} A${ir},${ir} 0 ${lg},0 ${xi1},${yi1}" fill="${d.color}" stroke="#f7f9f3" stroke-width="1.5"/>`;
+    angle+=sw;
+  });
+  return `<svg width="${size}" height="${size}" style="display:block;margin:auto">${out}</svg>`;
+}
+
+function noData(msg="No data") {
+  return `<div style="color:#d6dcc9;font-size:11px;padding:20px;text-align:center">${msg}</div>`;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// BANKING & INTEREST
+// Term-loan interest lives in the separate loan-account statement (a/c ...626280492),
+// which is NOT part of the imported CC transactions. These are the monthly
+// "PART PERIOD INTER" debits from that statement (Feb 2024 – Feb 2026).
+// ─────────────────────────────────────────────────────────────────────────────
+const TL_INTEREST = {
+  "2024-02":9823,"2024-03":10065,"2024-04":9641,"2024-05":9854,"2024-06":9434,
+  "2024-07":9638,"2024-08":9530,"2024-09":9117,"2024-10":9307,"2024-11":8900,
+  "2024-12":9080,"2025-01":8966,"2025-02":7916,"2025-03":8548,"2025-04":8071,
+  "2025-05":8138,"2025-06":7617,"2025-07":7563,"2025-08":7444,"2025-09":7088,
+  "2025-10":7199,"2025-11":6849,"2025-12":6867,"2026-01":6700,"2026-02":5976
+};
+
+let bankYear = "all";
+window.setBankYear = v => { bankYear = v; renderBanking(); };
+
+function renderBanking() {
+  const yf = bankYear === "all" ? null : bankYear;
+  const bk = TXNS.filter(t => t.debit > 0 && (!yf || t.date.slice(0,4) === yf));
+  const isPenal = d => /penal/i.test(d);
+  const isODint = d => /debit interest/i.test(d);
+
+  const odInt = bk.filter(t => isODint(t.desc) && !isPenal(t.desc)).reduce((s,t)=>s+t.debit,0);
+  const penal = bk.filter(t => isPenal(t.desc)).reduce((s,t)=>s+t.debit,0);
+  const bankingTot = bk.filter(t => t.cat === "banking").reduce((s,t)=>s+t.debit,0);
+  const otherChg = Math.max(0, bankingTot - odInt - penal);
+  const loanEMI = bk.filter(t => t.cat === "loan").reduce((s,t)=>s+t.debit,0);
+
+  let tlInt = 0; const tlMonthly = {};
+  Object.entries(TL_INTEREST).forEach(([k,v]) => { if (!yf || k.slice(0,4) === yf) { tlInt += v; tlMonthly[k] = v; } });
+
+  const totalInt = odInt + penal + tlInt;
+  const odShare = totalInt > 0 ? Math.round((odInt+penal)/totalInt*100) : 0;
+  const tlShare = totalInt > 0 ? Math.round(tlInt/totalInt*100) : 0;
+
+  // Monthly OD interest (incl. penal) vs term-loan interest
+  const odMonthly = {};
+  bk.filter(t => t.cat === "banking" && (isODint(t.desc) || isPenal(t.desc))).forEach(t => {
+    const k = t.date.slice(0,7); odMonthly[k] = (odMonthly[k]||0) + t.debit;
+  });
+  const months = [...new Set([...Object.keys(odMonthly), ...Object.keys(tlMonthly)])].sort();
+  const monthly = months.map(k => ({
+    label: new Date(k+"-15").toLocaleDateString("en-IN",{month:"short",year:"2-digit"}),
+    od: odMonthly[k]||0, tl: tlMonthly[k]||0
+  }));
+
+  const pie = [
+    {name:"OD/CC interest", value:odInt, color:"#d24b4b"},
+    {name:"CC penal charges", value:penal, color:"#f97316"},
+    {name:"Term-loan interest", value:tlInt, color:"#c07d12"},
+  ].filter(d => d.value > 0);
+
+  const kp = (label,val,sub,c) => `
+    <div class="card" style="margin:0">
+      <div style="font-size:10px;color:#6b756d;text-transform:uppercase;letter-spacing:.4px">${label}</div>
+      <div style="font-size:20px;font-weight:800;color:${c};margin-top:6px">${fmt(val)}</div>
+      <div style="font-size:10px;color:#8b948a;margin-top:3px">${sub}</div>
+    </div>`;
+
+  const flag = (kind,title,body) => {
+    const col = kind==="crit" ? "#d24b4b" : "#c07d12";
+    const bg  = kind==="crit" ? "rgba(239,68,68,.08)" : "rgba(245,158,11,.08)";
+    const ic  = kind==="crit" ? "🚨" : "⚠";
+    return `<div style="display:flex;gap:10px;padding:12px 14px;border-radius:8px;background:${bg};border:1px solid ${col}33;border-left:3px solid ${col};margin-bottom:10px">
+      <div style="font-size:15px;line-height:1.2">${ic}</div>
+      <div><div style="font-weight:700;color:#2b332e;font-size:12px;margin-bottom:2px">${title}</div>
+      <div style="font-size:11px;color:#5b645b;line-height:1.55">${body}</div></div>
+    </div>`;
+  };
+
+  document.getElementById("view-banking").innerHTML = `
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px">
+      <div>
+        <div class="page-title">Banking &amp; Interest</div>
+        <div style="font-size:11px;color:#8b948a;margin-top:2px">Cost of borrowing — term loan vs cash-credit overdraft</div>
+      </div>
+      ${yearSel(bankYear, "setBankYear(this.value)")}
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
+      ${kp("OD/CC interest (incl. penal)", odInt+penal, odShare+"% of interest", "#d24b4b")}
+      ${kp("Term-loan interest", tlInt, tlShare+"% of interest", "#c07d12")}
+      ${kp("Total interest to bank", totalInt, "excl. principal repayment", "#242c26")}
+      ${kp("Other bank charges", otherChg, "NeSL, transfer, arrear", "#5b645b")}
+    </div>
+
+    <div class="card">
+      <div class="card-title">Monthly interest to bank — OD vs term loan</div>
+      ${svgBars(monthly, 700, 220, "od", "tl", "#d24b4b", "#c07d12")}
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#d24b4b"></div>CC/OD interest (incl. penal)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#c07d12"></div>Term-loan interest</div>
+      </div>
+    </div>
+
+    <div class="two-col-rev">
+      <div class="card">
+        <div class="card-title">Split of interest cost</div>
+        <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+          <div>${svgPie(pie, 170)}</div>
+          <div style="flex:1;min-width:180px">
+            ${pie.map(d=>`<div class="rep-row"><span style="display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border-radius:2px;background:${d.color}"></span>${d.name}</span><strong>${fmt(d.value)}</strong></div>`).join("")}
+            <div class="rep-row" style="border-top:1px solid #d6dcc9;font-weight:700"><span>Total interest</span><strong>${fmt(totalInt)}</strong></div>
+            <div class="rep-row" style="border:none;color:#6b756d;font-size:11px"><span>Loan servicing moved from OD (principal)</span><strong style="color:#ec4899">${fmt(loanEMI)}</strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Credit facilities</div>
+        <div class="rep-row"><span>Cash Credit (OD) · SBI</span><span style="color:#5b645b">…987782</span></div>
+        <div class="rep-row" style="border:none;font-size:11px;color:#6b756d"><span>9.9% p.a. · drawing power</span><strong style="color:#5b645b">₹39,00,000</strong></div>
+        <div class="rep-row" style="margin-top:6px"><span>Term Loan · SBI</span><span style="color:#5b645b">…280492</span></div>
+        <div class="rep-row" style="border:none;font-size:11px;color:#6b756d"><span>~13% p.a. effective · serviced by</span><strong style="color:#5b645b">₹19,900/mo from OD</strong></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Risk flags for review</div>
+      ${flag("crit","Possible NPA classification","Statements carry &quot;NEW NPA RECOVERY&quot; and &quot;Unrealised Interest&quot; entries (11 Aug 2023, 22 Oct 2024), and OD interest drops to ₹787–₹2,257/mo during Aug–Oct 2024. Confirm status with the SBI branch — serious CIBIL / credit consequences.")}
+      ${flag("warn","Term loan funded by the overdraft","The ₹19,900 monthly loan servicing is transferred out of the CC/OD account, so the term loan is repaid using overdraft borrowing rather than fresh cash.")}
+      ${flag("warn","OD interest trending up","Monthly OD interest has risen from ~₹13k (early 2025) to ₹22–27k (early 2026), indicating rising utilisation toward the ₹39,00,000 limit.")}
+      <div style="font-size:10px;color:#8b948a;margin-top:6px">Term-loan interest is sourced from the loan-account statement (a/c …280492), separate from the imported CC transactions. OD figures update automatically as you import more statements. Treat the NPA flag as a prompt to verify with your CA and the branch, not a final determination.</div>
+    </div>
+  `;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// NAVIGATION
+// ─────────────────────────────────────────────────────────────────────────────
+function nav(el, view) {
+  document.querySelectorAll(".view").forEach(v=>v.classList.remove("active"));
+  document.querySelectorAll(".nav-item").forEach(n=>n.classList.remove("active"));
+  document.getElementById("view-"+view).classList.add("active");
+  el.classList.add("active");
+  page=0;
+  ({dashboard:renderDashboard,transactions:renderTransactions,reports:renderReports,banking:renderBanking,revenue:renderRevenue,ca:renderCA,users:renderUsers})[view]?.();
+}
+
+function closeModal(id) { document.getElementById(id).classList.remove("open"); }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// DASHBOARD
+// ─────────────────────────────────────────────────────────────────────────────
+function renderDashboard() {
+  const fil = TXNS.filter(t=>((!fDateFrom||t.date>=fDateFrom)&&(!fDateTo||t.date<=fDateTo)));
+  const totalD=fil.reduce((s,t)=>s+t.debit,0);
+  const totalC=fil.reduce((s,t)=>s+t.credit,0);
+  const rdExp=fil.filter(t=>t.rd==="rd").reduce((s,t)=>s+t.debit,0);
+  const uncat=fil.filter(t=>t.debit>0&&!t.cat).length+fil.filter(t=>t.credit>0&&!t.creditCat).length;
+
+  // Exclude intra-company for "operational" revenue
+  const opRevenue=fil.filter(t=>t.credit>0&&t.creditCat&&t.creditCat!=="intra_in").reduce((s,t)=>s+t.credit,0);
+
+  const monthly=getMonthly(TXNS).slice(-12);
+
+  // Expense breakdown
+  const expMap={};
+  fil.filter(t=>t.debit>0&&t.cat).forEach(t=>{
+    if(!expMap[t.cat]) expMap[t.cat]={name:(CM[t.cat]?.l||t.cat).split(" / ")[0],value:0,color:CM[t.cat]?.c};
+    expMap[t.cat].value+=t.debit;
+  });
+  const expData=Object.values(expMap).sort((a,b)=>b.value-a.value).slice(0,7);
+
+  // Revenue breakdown
+  const revMap={};
+  fil.filter(t=>t.credit>0&&t.creditCat).forEach(t=>{
+    if(!revMap[t.creditCat]) revMap[t.creditCat]={name:(CCM[t.creditCat]?.l||t.creditCat),value:0,color:CCM[t.creditCat]?.c};
+    revMap[t.creditCat].value+=t.credit;
+  });
+  const revData=Object.values(revMap).sort((a,b)=>b.value-a.value);
+
+  const rdPie=[
+    {name:"R&D",value:fil.filter(t=>t.rd==="rd"&&t.debit>0).reduce((s,t)=>s+t.debit,0),color:"#5f8a1e"},
+    {name:"Non-R&D",value:fil.filter(t=>t.rd==="non-rd"&&t.debit>0).reduce((s,t)=>s+t.debit,0),color:"#6b756d"},
+    {name:"Unclassified",value:fil.filter(t=>!t.rd&&t.debit>0).reduce((s,t)=>s+t.debit,0),color:"#d6dcc9"},
+  ].filter(d=>d.value>0);
+
+  document.getElementById("view-dashboard").innerHTML=`
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px">
+      <div><div class="page-title">Financial Overview</div>
+      <div class="page-sub" id="dash-date-sub">All accounts · ROOTSGOODS PVT LTD</div></div>
+      <div class="drange">
+        <span style="font-size:11px;color:#8b948a">From</span>
+        <input type="date" id="d-from" value="${fDateFrom}" onchange="stageDate('from',this.value)"/>
+        <span style="font-size:11px;color:#8b948a">To</span>
+        <input type="date" id="d-to" value="${fDateTo}" onchange="stageDate('to',this.value)"/>
+        <button class="btn" style="padding:6px 14px;font-size:12px;color:#5f8a1e;border-color:#4c7015;background:#f7f9f3" onclick="applyDateFilter()">🔍 Search</button>
+        <button class="dl-btn" onclick="exportCSV()">↓ Export CSV</button>
+      </div>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat" style="border-top:3px solid #d24b4b">
+        <div class="stat-label">Total Outflows</div><div class="stat-val">${fK(totalD)}</div><div class="stat-sub">All debits</div></div>
+      <div class="stat" style="border-top:3px solid #1f9d57">
+        <div class="stat-label">Total Inflows</div><div class="stat-val">${fK(totalC)}</div><div class="stat-sub">All credits</div></div>
+      <div class="stat" style="border-top:3px solid #1f9d57">
+        <div class="stat-label">Operational Revenue</div><div class="stat-val">${fK(opRevenue)}</div><div class="stat-sub">Excl. intra-company</div></div>
+      <div class="stat" style="border-top:3px solid #5f8a1e">
+        <div class="stat-label">R&D Expenses</div><div class="stat-val">${fK(rdExp)}</div>
+        <div class="stat-sub">${totalD>0?((rdExp/totalD)*100).toFixed(1):0}% of outflows</div></div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">Monthly Cash Flow (Last 12 Months)</div>
+        ${svgBars(monthly,480,200,"debit","credit","#d24b4b","#1f9d57")}
+        <div class="legend">
+          <div class="legend-item"><div class="legend-dot" style="background:#1f9d57"></div>Inflows</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#d24b4b"></div>Outflows</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">R&D vs Non-R&D Expenses</div>
+        ${svgPie(rdPie,130)}
+        <div class="pie-legend">
+          ${rdPie.map(d=>`<div class="pie-row">
+            <div class="legend-item"><div class="legend-dot" style="background:${d.color}"></div><span style="color:#5b645b">${d.name}</span></div>
+            <strong style="color:#242c26">${fK(d.value)}</strong></div>`).join("")}
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">Expense Breakdown by Category</div>
+        <div class="two-col-rev" style="margin-bottom:0">
+          <div>${svgHBars(expData,400,Math.max(140,expData.length*26))}</div>
+          <div>${expData.slice(0,5).map(d=>`
+            <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #e4e8dd;font-size:11px">
+              <div class="legend-item"><div class="legend-dot" style="background:${d.color}"></div><span style="color:#5b645b">${(d.name||"").length>16?(d.name||"").slice(0,16)+"…":(d.name||"")}</span></div>
+              <strong style="color:#242c26">${fK(d.value)}</strong></div>`).join("")}</div>
+        </div>
+      </div>
+      <div class="card rev-highlight" style="background:rgba(16,185,129,.04)">
+        <div class="card-title" style="color:#1f9d57">Revenue by Source</div>
+        ${svgPie(revData.slice(0,6),130)}
+        <div class="pie-legend" style="margin-top:8px">
+          ${revData.map(d=>`<div class="pie-row">
+            <div class="legend-item"><div class="legend-dot" style="background:${d.color}"></div>
+            <span style="color:#5b645b;font-size:10px">${(d.name||"").split("–").pop().trim()}</span></div>
+            <strong style="color:#242c26;font-size:11px">${fK(d.value)}</strong></div>`).join("")}
+          ${!revData.length?`<p style="color:#d6dcc9;font-size:11px;padding:8px 0">No revenue categories set.<br>Tag credits in Transactions.</p>`:""}
+        </div>
+      </div>
+    </div>
+    ${uncat>0?`<div style="background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.2);border-radius:8px;padding:10px 14px;font-size:12px;color:#a86a0c">
+      ⚠ <strong>${uncat}</strong> transactions are uncategorized. Go to <strong>Transactions</strong> to tag them.
+    </div>`:""}
+  `;
+}
+window.stageDate=(which,v)=>{if(which==='from')fDateFrom=v;else fDateTo=v;};
+window.applyDateFilter=()=>{
+  // fDateFrom and fDateTo are already updated by stageDate onchange
+  const view=document.querySelector('.nav-item.active')?.getAttribute('data-view')||'dashboard';
+  ({dashboard:renderDashboard,transactions:renderTransactions,reports:renderReports,banking:renderBanking,revenue:renderRevenue,ca:renderCA,users:renderUsers})[view]?.();
+};
+window.setDateFrom=v=>{fDateFrom=v;};
+window.setDateTo=v=>{fDateTo=v;};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// TRANSACTIONS
+// ─────────────────────────────────────────────────────────────────────────────
+function renderTransactions() {
+  const fil=TXNS.filter(t=>{
+    if(fSearch&&!t.desc.toLowerCase().includes(fSearch.toLowerCase())) return false;
+    if(fType==="debit"&&t.debit===0) return false;
+    if(fType==="credit"&&t.credit===0) return false;
+    if(fCat!=="all"&&t.debit>0&&t.cat!==fCat) return false;
+    if(fRd!=="all"&&t.rd!==fRd) return false;
+    if(fDateFrom&&t.date<fDateFrom) return false;
+    if(fDateTo&&t.date>fDateTo) return false;
+    if(fAcct!=="all"&&(t.acct||"SBI CC")!==fAcct) return false;
+    return true;
+  });
+
+  const totalD=fil.reduce((s,t)=>s+t.debit,0);
+  const totalC=fil.reduce((s,t)=>s+t.credit,0);
+  const totalPg=Math.ceil(fil.length/PP)||1;
+  const paged=fil.slice(page*PP,(page+1)*PP);
+
+  const catOpts=CATS.filter(c=>c.v).map(c=>`<option value="${c.v}" ${fCat===c.v?"selected":""}>${c.l}</option>`).join("");
+
+  const rows=paged.map(t=>{
+    const isCredit=t.credit>0&&t.debit===0;
+
+    // Expense category dropdown (for debits)
+    const expDrop=!isCredit ? `<select class="cat-sel" style="border-color:${CM[t.cat]?.c||"#d6dcc9"};color:${CM[t.cat]?.c||"#8b948a"}" onchange="setTxnCat('${t.id}',this.value)">
+      ${CATS.map(c=>`<option value="${c.v}" ${t.cat===c.v?"selected":""}>${c.l}</option>`).join("")}
+      <option value="__new">＋ Create new ledger…</option>
+    </select>` : `<span style="color:#d6dcc9;font-size:10px">—</span>`;
+
+    // Revenue category dropdown (for credits)
+    const revDrop=isCredit ? `<select class="ccat-sel" style="border-color:${CCM[t.creditCat]?.c||"#d6dcc9"};color:${CCM[t.creditCat]?.c||"#8b948a"}" onchange="setTxnCreditCat('${t.id}',this.value)">
+      ${CREDIT_CATS.map(c=>`<option value="${c.v}" ${t.creditCat===c.v?"selected":""}>${c.l}</option>`).join("")}
+      <option value="__new">＋ Create new ledger…</option>
+    </select>` : `<span style="color:#d6dcc9;font-size:10px">—</span>`;
+
+    const rdDrop=!isCredit ? `<select class="rd-sel" style="border-color:${t.rd==="rd"?"#5f8a1e":t.rd==="non-rd"?"#6b756d":"#d6dcc9"};color:${t.rd==="rd"?"#5f8a1e":t.rd==="non-rd"?"#5b645b":"#8b948a"}" onchange="setTxnRd('${t.id}',this.value)">
+      <option value="" ${!t.rd?"selected":""}>— Not set —</option>
+      <option value="rd" ${t.rd==="rd"?"selected":""}>R&D</option>
+      <option value="non-rd" ${t.rd==="non-rd"?"selected":""}>Non-R&D</option>
+    </select>` : `<span style="color:#d6dcc9;font-size:10px">—</span>`;
+
+    const vchr=t.voucher
+      ?`<span class="vchr-done">✓ #${esc(t.voucher)}</span>`
+      :`<button class="vchr-btn" onclick="openVoucher('${t.id}')">+ Voucher</button>`;
+
+    const rowBg=isCredit?"rgba(34,197,94,.03)":"";
+
+    return `<tr style="background:${rowBg}">
+      <td class="td-date">${t.date}</td>
+      <td><div class="td-desc" title="${esc(t.desc)}">${esc(t.desc)}</div>
+        <div style="font-size:9px;margin-top:2px;color:${(t.acct||"SBI CC").includes("Federal")?"#c07d12":"#8b948a"}">${esc(t.acct||"SBI CC")}</div>
+        ${t.notes?`<div style="font-size:10px;color:#8b948a;margin-top:1px">${esc(t.notes)}</div>`:""}
+        ${t.invoice?`<div style="font-size:10px;color:#5f8a1e;margin-top:1px">INV: ${esc(t.invoice)}</div>`:""}
+      </td>
+      <td class="td-debit">${t.debit>0?fmt(t.debit):"—"}</td>
+      <td class="td-credit">${t.credit>0?fmt(t.credit):"—"}</td>
+      <td>${expDrop}</td>
+      <td>${revDrop}</td>
+      <td>${rdDrop}</td>
+      <td>${vchr}</td>
+      <td><input class="inv-inp" value="${esc(t.invoice||"")}" placeholder="INV-…" onchange="setTxnInv('${t.id}',this.value)"/></td>
+    </tr>`;
+  }).join("");
+
+  document.getElementById("view-transactions").innerHTML=`
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+      <div class="page-title">Transactions</div>
+      <button class="btn btn-blue" onclick="openUploadModal()">📁 Upload Statement (PDF / CSV)</button>
+    </div>
+    <div class="page-sub">Tag each transaction as an expense category or revenue source using the dropdowns below.</div>
+
+    <div class="filters">
+      <div class="search-wrap"><input type="text" placeholder="Search transactions…" value="${esc(fSearch)}" oninput="setSearch(this.value)" style="width:100%"/></div>
+      <input type="date" value="${fDateFrom}" title="From date" onchange="stageDate('from',this.value)" style="background:#ffffff;border:1px solid #d6dcc9;border-radius:6px;padding:6px 8px;font-size:12px;color:#2b332e;outline:none"/>
+      <input type="date" value="${fDateTo}" title="To date" onchange="stageDate('to',this.value)" style="background:#ffffff;border:1px solid #d6dcc9;border-radius:6px;padding:6px 8px;font-size:12px;color:#2b332e;outline:none"/>
+      <select onchange="setTxnType(this.value)" style="background:#ffffff;border:1px solid #d6dcc9;border-radius:6px;padding:6px 10px;font-size:12px;color:#5b645b;cursor:pointer">
+        <option value="all" ${fType==="all"?"selected":""}>Debits & Credits</option>
+        <option value="debit" ${fType==="debit"?"selected":""}>Debits only</option>
+        <option value="credit" ${fType==="credit"?"selected":""}>Credits only</option>
+      </select>
+      <select onchange="setTxnAcct(this.value)" style="background:#ffffff;border:1px solid #d6dcc9;border-radius:6px;padding:6px 10px;font-size:12px;color:#5b645b;cursor:pointer">
+        <option value="all" ${fAcct==="all"?"selected":""}>All Accounts</option>
+        ${allAccounts().map(a=>`<option value="${esc(a)}" ${fAcct===a?"selected":""}>${esc(a)}</option>`).join("")}
+      </select>
+      <select onchange="setTxnCatFilter(this.value)" style="background:#ffffff;border:1px solid #d6dcc9;border-radius:6px;padding:6px 10px;font-size:12px;color:#5b645b;cursor:pointer">
+        <option value="all" ${fCat==="all"?"selected":""}>All Exp. Categories</option>
+        ${catOpts}
+      </select>
+      <select onchange="setTxnRdFilter(this.value)" style="background:#ffffff;border:1px solid #d6dcc9;border-radius:6px;padding:6px 10px;font-size:12px;color:#5b645b;cursor:pointer">
+        <option value="all" ${fRd==="all"?"selected":""}>All R&D Types</option>
+        <option value="rd">R&D</option><option value="non-rd">Non-R&D</option><option value="">Unclassified</option>
+      </select>
+      <button class="btn" style="padding:6px 12px;font-size:12px;white-space:nowrap" onclick="openLedgerModal('exp')">📒 Ledgers</button>
+      <span style="font-size:11px;color:#8b948a;margin-left:auto">${fil.length} txns &nbsp;·&nbsp; Out: ${fK(totalD)} &nbsp;·&nbsp; In: ${fK(totalC)}</span>
+    </div>
+
+    <div style="background:#f7f9f3;border-radius:8px;padding:8px 12px;margin-bottom:10px;font-size:11px;color:#8b948a;display:flex;gap:20px;flex-wrap:wrap">
+      <span>🔴 <strong style="color:#5b645b">Expense Category</strong> — tag what the debit was spent on</span>
+      <span>🟢 <strong style="color:#5b645b">Revenue Source</strong> — tag where the credit came from</span>
+      <span>🔵 <strong style="color:#5b645b">R&D</strong> — is the expense research &amp; development?</span>
+    </div>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr>
+          <th>Date</th><th>Description</th><th>Debit</th><th>Credit</th>
+          <th>Expense Category</th><th>Revenue Source</th><th>R&D</th><th>Voucher</th><th>Invoice #</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+    <div class="pager">
+      <span style="font-size:11px;color:#8b948a">Showing ${page*PP+1}–${Math.min((page+1)*PP,fil.length)} of ${fil.length}</span>
+      <div style="display:flex;gap:6px;align-items:center">
+        <button class="pg-btn" onclick="pgPrev()" ${page===0?"disabled":""}>← Prev</button>
+        <span style="font-size:11px;color:#6b756d;padding:0 6px">${page+1} / ${totalPg}</span>
+        <button class="pg-btn" onclick="pgNext(${totalPg})" ${page>=totalPg-1?"disabled":""}>Next →</button>
+      </div>
+    </div>
+  `;
+}
+window.setSearch=v=>{fSearch=v;page=0;renderTransactions();};
+window.setTxnType=v=>{fType=v;page=0;renderTransactions();};
+window.setTxnCatFilter=v=>{fCat=v;page=0;renderTransactions();};
+window.setTxnRdFilter=v=>{fRd=v;page=0;renderTransactions();};
+window.setTxnAcct=v=>{fAcct=v;page=0;renderTransactions();};
+window.setTxnCat=(id,v)=>{ if(v==="__new"){openLedgerModal("exp",id);return;} updTxn(id,{cat:v,rd:autoRd(v)});};
+window.setTxnCreditCat=(id,v)=>{ if(v==="__new"){openLedgerModal("cr",id);return;} updTxn(id,{creditCat:v});};
+window.setTxnRd=(id,v)=>{updTxn(id,{rd:v});};
+window.setTxnInv=(id,v)=>{updTxn(id,{invoice:v});};
+window.pgPrev=()=>{page=Math.max(0,page-1);renderTransactions();};
+window.pgNext=t=>{page=Math.min(t-1,page+1);renderTransactions();};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// REPORTS
+// ─────────────────────────────────────────────────────────────────────────────
+function renderReports() {
+  const sub=TXNS.filter(t=>((!fDateFrom||t.date>=fDateFrom)&&(!fDateTo||t.date<=fDateTo)));
+  const catMap={};
+  CATS.filter(c=>c.v&&c.v!=="intra_company").forEach(c=>{catMap[c.v]={rd:0,nr:0,total:0,label:c.l,color:c.c};});
+  sub.filter(t=>t.debit>0&&t.cat&&t.cat!=="intra_company").forEach(t=>{
+    if(!catMap[t.cat]) return;
+    catMap[t.cat].total+=t.debit;
+    if(t.rd==="rd") catMap[t.cat].rd+=t.debit; else catMap[t.cat].nr+=t.debit;
+  });
+  const byCat=Object.values(catMap).filter(v=>v.total>0).sort((a,b)=>b.total-a.total);
+  const te=byCat.reduce((s,c)=>s+c.total,0);
+  const tr=byCat.reduce((s,c)=>s+c.rd,0);
+  const tnr=byCat.reduce((s,c)=>s+c.nr,0);
+  const tin=sub.reduce((s,t)=>s+t.credit,0);
+  const interest=sub.filter(t=>t.cat==="banking").reduce((s,t)=>s+t.debit,0);
+  const loanPmt=sub.filter(t=>t.cat==="loan").reduce((s,t)=>s+t.debit,0);
+  const rawMat=byCat.find(c=>c.label.includes("Raw"))?.total||0;
+  const ops=te-interest-loanPmt;
+  const net=tin-te;
+  const nCol=net>=0?"#1f9d57":"#d24b4b";
+
+  const yearly={};
+  TXNS.forEach(t=>{const y=t.date.slice(0,4);if(!yearly[y])yearly[y]={y,label:t.date.slice(0,4),debit:0,credit:0,rd:0};yearly[y].debit+=t.debit;yearly[y].credit+=t.credit;if(t.rd==="rd")yearly[y].rd+=t.debit;});
+  const yData=Object.values(yearly).sort((a,b)=>a.y.localeCompare(b.y));
+
+  const R=(txt,val,cls="",cols=false)=>`<div class="rep-row ${cls}">${cols
+    ?`<span>${txt}</span><div class="rep-cols">${val}</div>`
+    :`<span>${txt}</span><span>${val}</span>`}</div>`;
+
+  document.getElementById("view-reports").innerHTML=`
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px">
+      <div class="page-title">Reports</div>
+      <div class="drange">
+        <span style="font-size:11px;color:#8b948a">From</span>
+        <input type="date" value="${fDateFrom}" onchange="stageDate('from',this.value)"/>
+        <span style="font-size:11px;color:#8b948a">To</span>
+        <input type="date" value="${fDateTo}" onchange="stageDate('to',this.value)"/>
+        <button class="btn" style="padding:6px 14px;font-size:12px;color:#5f8a1e;border-color:#4c7015;background:#f7f9f3" onclick="applyDateFilter()">🔍 Search</button>
+        <button class="dl-btn" onclick="exportCSV()">↓ Export CSV</button>
+      </div>
+    </div>
+    <div class="two-col-eq">
+      <div class="card">
+        <div class="card-title">Cash Flow Statement ${fDateFrom||fDateTo?(fDateFrom||"start")+" → "+(fDateTo||"now"):"All Time"}</div>
+        <div class="rep-row" style="font-size:10px;color:#8b948a;font-weight:700;text-transform:uppercase;letter-spacing:.4px;border-bottom:1px solid #d6dcc9;padding-bottom:6px">
+          <span>Description</span><div class="rep-cols"><span>R&D</span><span>Non-R&D</span><span>Total</span></div></div>
+        ${R("Total Inflows (Credits)",`<span>—</span><span>—</span><strong>${fmt(tin)}</strong>`,"",true)}
+        <div style="font-size:10px;color:#8b948a;font-weight:700;padding:4px 0 2px;text-transform:uppercase">Outflows by category:</div>
+        ${byCat.map(c=>`<div class="rep-row rep-indent">
+          <span style="display:flex;align-items:center;gap:4px"><span style="display:inline-block;width:6px;height:6px;border-radius:2px;background:${c.color}"></span>${esc(c.label.split(" / ")[0])}</span>
+          <div class="rep-cols"><span style="color:#5f8a1e">${c.rd>0?fmt(c.rd):"—"}</span><span>${c.nr>0?fmt(c.nr):"—"}</span><span style="color:#d24b4b;font-weight:600">${fmt(c.total)}</span></div>
+        </div>`).join("")}
+        ${R("Total Outflows",`<span style="color:#5f8a1e">${fmt(tr)}</span><span style="color:#5b645b">${fmt(tnr)}</span><strong>${fmt(te)}</strong>`,"rep-total",true)}
+        <div class="rep-row" style="font-weight:700;color:${nCol};border-top:1px solid #d6dcc9;padding-top:8px">
+          <span>Net Cash Flow</span><div class="rep-cols"><span>—</span><span>—</span><strong>${fmt(net)}</strong></div></div>
+      </div>
+      <div class="card">
+        <div class="card-title">P&amp;L Summary ${fDateFrom||fDateTo?(fDateFrom||"start")+" → "+(fDateTo||"now"):"All Time"}</div>
+        ${R(`<span style="color:#1f9d57">Revenue (Inflows)</span>`,`<strong style="color:#1f9d57">${fmt(tin)}</strong>`)}
+        ${R("(-) Raw Materials",`<span style="color:#d24b4b">(${fmt(rawMat)})</span>`,"rep-indent")}
+        ${R("<strong>Gross Margin</strong>",`<strong>${fmt(tin-rawMat)}</strong>`)}
+        ${R("(-) Operating Expenses",`<span style="color:#d24b4b">(${fmt(ops)})</span>`,"rep-indent")}
+        ${R("<strong>EBITDA</strong>",`<strong>${fmt(tin-rawMat-ops)}</strong>`)}
+        ${R("(-) Interest & Banking",`<span style="color:#d24b4b">(${fmt(interest)})</span>`,"rep-indent")}
+        ${R("(-) Loan Repayments",`<span style="color:#d24b4b">(${fmt(loanPmt)})</span>`,"rep-indent")}
+        <div class="rep-row rep-total" style="color:${nCol}"><span><strong>Net Position</strong></span><strong>${fmt(net)}</strong></div>
+        <div class="rd-box">
+          <div class="rd-box-title">R&D Classification</div>
+          <div class="rd-box-row"><span style="color:#6b756d">R&D Expenses</span><strong style="color:#5f8a1e">${fmt(tr)}</strong></div>
+          <div class="rd-box-row"><span style="color:#6b756d">Non-R&D Expenses</span><strong style="color:#5b645b">${fmt(tnr)}</strong></div>
+          <div class="rd-box-row" style="border:none"><span style="color:#6b756d">R&D as % of Total Exp.</span><strong style="color:#5f8a1e">${te>0?((tr/te)*100).toFixed(1):0}%</strong></div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Year-over-Year Comparison</div>
+      ${svgBars(yData,700,200,"debit","credit","#d24b4b","#1f9d57")}
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#1f9d57"></div>Inflows</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#d24b4b"></div>Outflows</div>
+      </div>
+    </div>
+  `;
+}
+// changeRepYear deprecated - use setDateFrom/setDateTo
+
+// ─────────────────────────────────────────────────────────────────────────────
+// REVENUE ANALYSIS
+// ─────────────────────────────────────────────────────────────────────────────
+function renderRevenue() {
+  const sub=TXNS.filter(t=>((!fDateFrom||t.date>=fDateFrom)&&(!fDateTo||t.date<=fDateTo)));
+
+  // Revenue by credit category
+  const revMap={};
+  CREDIT_CATS.filter(c=>c.v).forEach(c=>{revMap[c.v]={label:c.l,color:c.c,total:0,txns:[]};});
+  sub.filter(t=>t.credit>0&&t.creditCat).forEach(t=>{
+    if(!revMap[t.creditCat]) return;
+    revMap[t.creditCat].total+=t.credit;
+    revMap[t.creditCat].txns.push(t);
+  });
+  const unclassified=sub.filter(t=>t.credit>0&&!t.creditCat).reduce((s,t)=>s+t.credit,0);
+  const revArr=Object.values(revMap).filter(v=>v.total>0).sort((a,b)=>b.total-a.total);
+  const totalRev=revArr.reduce((s,v)=>s+v.total,0)+unclassified;
+
+  // Revenue ex-intra
+  const opRev=revArr.filter(v=>v.label.includes("Intra")?false:true).reduce((s,v)=>s+v.total,0);
+
+  // Monthly revenue trend
+  const monthlyRev={};
+  sub.filter(t=>t.credit>0).forEach(t=>{
+    const k=t.date.slice(0,7);
+    if(!monthlyRev[k]) monthlyRev[k]={k,label:new Date(k+"-15").toLocaleDateString("en-IN",{month:"short",year:"2-digit"}),total:0,op:0};
+    monthlyRev[k].total+=t.credit;
+    if(t.creditCat&&t.creditCat!=="intra_in") monthlyRev[k].op+=t.credit;
+  });
+  const mRevArr=Object.values(monthlyRev).sort((a,b)=>a.k.localeCompare(b.k)).slice(-12);
+
+  // Rev vs Exp (monthly for operational)
+  const monthly=getMonthly(sub).slice(-12);
+
+  // Yearly revenue
+  const yrRev={};
+  TXNS.filter(t=>t.credit>0).forEach(t=>{
+    const y=t.date.slice(0,4);
+    if(!yrRev[y]) yrRev[y]={y,label:t.date.slice(0,4),total:0,op:0};
+    yrRev[y].total+=t.credit;
+    if(t.creditCat&&t.creditCat!=="intra_in") yrRev[y].op+=t.credit;
+  });
+  const yrRevArr=Object.values(yrRev).sort((a,b)=>a.y.localeCompare(b.y));
+
+  const pieData=revArr.map(v=>({name:v.label.split("–").pop().trim(),value:v.total,color:v.color}));
+
+  document.getElementById("view-revenue").innerHTML=`
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px">
+      <div><div class="page-title">Revenue Analysis</div>
+      <div class="page-sub">Tag credits in Transactions → Revenue Source dropdown to populate this view.</div></div>
+      <div class="drange">
+        <span style="font-size:11px;color:#8b948a">From</span>
+        <input type="date" value="${fDateFrom}" onchange="stageDate('from',this.value)"/>
+        <span style="font-size:11px;color:#8b948a">To</span>
+        <input type="date" value="${fDateTo}" onchange="stageDate('to',this.value)"/>
+        <button class="btn" style="padding:6px 14px;font-size:12px;color:#5f8a1e;border-color:#4c7015;background:#f7f9f3" onclick="applyDateFilter()">🔍 Search</button>
+        <button class="dl-btn" onclick="exportCSV()">↓ Export CSV</button>
+      </div>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat" style="border-top:3px solid #1f9d57">
+        <div class="stat-label">Total Inflows</div><div class="stat-val">${fK(totalRev)}</div><div class="stat-sub">All credits</div></div>
+      <div class="stat" style="border-top:3px solid #1f9d57">
+        <div class="stat-label">Operational Revenue</div><div class="stat-val">${fK(opRev)}</div><div class="stat-sub">Excl. intra-company</div></div>
+      <div class="stat" style="border-top:3px solid #c07d12">
+        <div class="stat-label">Classified</div><div class="stat-val">${fK(totalRev-unclassified)}</div>
+        <div class="stat-sub">${totalRev>0?(((totalRev-unclassified)/totalRev)*100).toFixed(0):0}% tagged</div></div>
+      <div class="stat" style="border-top:3px solid #6b756d">
+        <div class="stat-label">Unclassified</div><div class="stat-val">${fK(unclassified)}</div><div class="stat-sub">Needs tagging</div></div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">Monthly Revenue Trend (Last 12 Months)</div>
+        ${svgBars(mRevArr,480,200,"op","total","#1f9d57","#1f9d57")}
+        <div class="legend">
+          <div class="legend-item"><div class="legend-dot" style="background:#1f9d57"></div>Total Inflows</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#1f9d57"></div>Operational Revenue</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Revenue by Source</div>
+        ${svgPie(pieData,130)}
+        <div class="pie-legend" style="margin-top:8px">
+          ${revArr.map(v=>`<div class="pie-row">
+            <div class="legend-item"><div class="legend-dot" style="background:${v.color}"></div>
+              <span style="color:#5b645b;font-size:10px">${v.label.split("–").pop().trim()}</span></div>
+            <div style="text-align:right">
+              <strong style="color:#242c26;font-size:11px">${fK(v.total)}</strong>
+              <span style="color:#8b948a;font-size:10px;margin-left:6px">${totalRev>0?((v.total/totalRev)*100).toFixed(1):0}%</span>
+            </div></div>`).join("")}
+          ${unclassified>0?`<div class="pie-row">
+            <span style="color:#8b948a;font-size:10px">⚠ Unclassified credits</span>
+            <strong style="color:#c07d12">${fK(unclassified)}</strong></div>`:""}
+          ${!revArr.length?`<p style="color:#d6dcc9;font-size:11px;padding:12px 0;text-align:center">No revenue tagged yet.<br>Go to <strong style="color:#5b645b">Transactions</strong> and set the<br><strong style="color:#5b645b">Revenue Source</strong> for each credit row.</p>`:""}
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Revenue Statement by Source ${fDateFrom||fDateTo?(fDateFrom||"start")+" → "+(fDateTo||"now"):"All Time"}</div>
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:12px">
+          <thead><tr>
+            <th style="padding:8px 10px;text-align:left;color:#8b948a;font-size:10px;border-bottom:1px solid #d6dcc9;background:#f7f9f3;text-transform:uppercase;letter-spacing:.5px">Revenue Source</th>
+            <th style="padding:8px 10px;text-align:right;color:#8b948a;font-size:10px;border-bottom:1px solid #d6dcc9;background:#f7f9f3;text-transform:uppercase;letter-spacing:.5px">Amount</th>
+            <th style="padding:8px 10px;text-align:right;color:#8b948a;font-size:10px;border-bottom:1px solid #d6dcc9;background:#f7f9f3;text-transform:uppercase;letter-spacing:.5px">% of Total</th>
+            <th style="padding:8px 10px;text-align:right;color:#8b948a;font-size:10px;border-bottom:1px solid #d6dcc9;background:#f7f9f3;text-transform:uppercase;letter-spacing:.5px">Transactions</th>
+          </tr></thead>
+          <tbody>
+            ${revArr.map(v=>`<tr>
+              <td style="padding:8px 10px;border-bottom:1px solid #e4e8dd">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <div style="width:8px;height:8px;border-radius:2px;background:${v.color};flex-shrink:0"></div>
+                  ${esc(v.label)}
+                </div>
+              </td>
+              <td style="padding:8px 10px;border-bottom:1px solid #e4e8dd;text-align:right;font-weight:600;color:#1f9d57;font-variant-numeric:tabular-nums">${fmt(v.total)}</td>
+              <td style="padding:8px 10px;border-bottom:1px solid #e4e8dd;text-align:right;color:#5b645b">${totalRev>0?((v.total/totalRev)*100).toFixed(1):0}%</td>
+              <td style="padding:8px 10px;border-bottom:1px solid #e4e8dd;text-align:right;color:#6b756d">${v.txns.length}</td>
+            </tr>`).join("")}
+            ${unclassified>0?`<tr>
+              <td style="padding:8px 10px;color:#8b948a"><span style="color:#c07d12">⚠</span> Unclassified credits</td>
+              <td style="padding:8px 10px;text-align:right;color:#c07d12;font-weight:600">${fmt(unclassified)}</td>
+              <td style="padding:8px 10px;text-align:right;color:#8b948a">${totalRev>0?((unclassified/totalRev)*100).toFixed(1):0}%</td>
+              <td style="padding:8px 10px;text-align:right;color:#8b948a">${sub.filter(t=>t.credit>0&&!t.creditCat).length}</td>
+            </tr>`:""}
+            <tr style="border-top:1px solid #d6dcc9">
+              <td style="padding:8px 10px;font-weight:700;color:#242c26">Total</td>
+              <td style="padding:8px 10px;text-align:right;font-weight:700;color:#1f9d57">${fmt(totalRev)}</td>
+              <td style="padding:8px 10px;text-align:right;color:#6b756d">100%</td>
+              <td style="padding:8px 10px;text-align:right;color:#6b756d">${sub.filter(t=>t.credit>0).length}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Year-over-Year Revenue</div>
+      ${svgBars(yrRevArr,700,190,"op","total","#1f9d57","#1f9d57")}
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#1f9d57"></div>Total Inflows</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#1f9d57"></div>Operational Revenue</div>
+      </div>
+    </div>
+  `;
+}
+// changeRevYear deprecated - use setDateFrom/setDateTo
+
+// ─────────────────────────────────────────────────────────────────────────────
+// UPLOAD MODAL
+// ─────────────────────────────────────────────────────────────────────────────
+window.openUploadModal = () => {
+  pendingImport=[];
+  document.getElementById("upload-preview").innerHTML="";
+  document.getElementById("confirm-import-btn").style.display="none";
+  document.getElementById("file-inp").value="";
+  document.getElementById("upload-modal").classList.add("open");
+};
+
+// Drag & drop
+const dz=document.getElementById("drop-zone");
+dz.addEventListener("dragover",e=>{e.preventDefault();dz.classList.add("dragover");});
+dz.addEventListener("dragleave",()=>dz.classList.remove("dragover"));
+dz.addEventListener("drop",e=>{
+  e.preventDefault();dz.classList.remove("dragover");
+  const f=e.dataTransfer.files[0];
+  if(f) processFile(f);
+});
+
+window.handleFileSelect = inp => { if(inp.files[0]) processFile(inp.files[0]); };
+
+function processFile(file) {
+  const isPDF = /\.pdf$/i.test(file.name) || file.type==='application/pdf';
+  if(isPDF){
+    const prev=document.getElementById("upload-preview");
+    prev.innerHTML=`<div style="text-align:center;padding:24px;color:#5b645b">
+      <div style="font-size:24px;margin-bottom:8px">⏳</div>
+      <div>Loading PDF.js and parsing <strong style="color:#2b332e">${esc(file.name)}</strong>…</div>
+      <div style="font-size:11px;margin-top:4px;color:#8b948a">Requires internet for first-time PDF.js load</div>
+    </div>`;
+    document.getElementById("confirm-import-btn").style.display="none";
+    parsePDFFile(file)
+      .then(r=>showPreviewCore(r.txns, file.name, r.acct))
+      .catch(err=>{ prev.innerHTML=`<div class="import-status status-warn">⚠ ${esc(err.message)}<br><small>Try converting the PDF to CSV from your bank's net banking portal.</small></div>`; });
+  } else {
+    const reader=new FileReader();
+    reader.onload=e=>showPreview(file.name, e.target.result);
+    reader.readAsText(file);
+  }
+}
+
+function showPreview(fname, text) {
+  const {rows,error}=parseCSVText(text);
+  if(error||!rows.length){
+    document.getElementById("upload-preview").innerHTML=`<div class="import-status status-warn">⚠ ${esc(error||"No valid transactions found.")}</div>`;
+    document.getElementById("confirm-import-btn").style.display="none"; pendingImport=[]; return;
+  }
+  showPreviewCore(rows, fname, 'CSV Import');
+}
+
+function showPreviewCore(rows, fname, acct) {
+  const prev=document.getElementById("upload-preview");
+  const btn=document.getElementById("confirm-import-btn");
+
+  if(!rows||!rows.length){
+    prev.innerHTML=`<div class="import-status status-warn">⚠ No transactions could be extracted. Please check the file format.</div>`;
+    btn.style.display="none"; pendingImport=[]; return;
+  }
+
+  // Deduplicate against existing
+  const existKeys=new Set(TXNS.map(t=>`${t.date}|${t.debit}|${t.credit}`));
+  const newRows=rows.filter(r=>!existKeys.has(`${r.date}|${r.debit}|${r.credit}`));
+  const dupes=rows.length-newRows.length;
+
+  pendingImport=newRows.map((r,i)=>{
+    const cat=r.debit>0?autoCat(r.desc):"";
+    const creditCat=r.credit>0?autoCreditCat(r.desc):"";
+    return {id:`imp-${Date.now()}-${i}`,date:r.date,desc:r.desc,debit:r.debit,credit:r.credit,
+            cat,rd:autoRd(cat),creditCat,acct:acct||'Imported',voucher:"",invoice:"",notes:""};
+  });
+
+  const acctOptions=[...new Set([acct||'Imported',...allAccounts()])];
+  prev.innerHTML=`
+    <div style="display:flex;align-items:center;gap:9px;margin-bottom:12px">
+      <label style="font-size:11px;font-weight:800;color:#8b948a;text-transform:uppercase;letter-spacing:.5px;white-space:nowrap">Import into account</label>
+      <select id="import-acct-sel" onchange="setImportAcct(this.value)" style="flex:1;background:#ffffff;border:1px solid #d6dcc9;border-radius:8px;padding:7px 10px;font-size:12px;color:#242c26;cursor:pointer;font-family:inherit">
+        ${acctOptions.map(a=>`<option value="${esc(a)}" ${a===(acct||'Imported')?"selected":""}>${esc(a)}</option>`).join("")}
+        <option value="__new">＋ New account name…</option>
+      </select>
+    </div>
+    <div class="import-status status-ok">
+      ✓ Found <strong>${rows.length}</strong> transactions in <em>${esc(fname)}</em>.
+      ${dupes>0?`<br>${dupes} duplicate(s) skipped.`:""}
+      <strong>${pendingImport.length}</strong> new transactions ready to import.
+    </div>
+    <div style="max-height:200px;overflow-y:auto;border-radius:8px;border:1px solid #d6dcc9">
+      <table class="preview-tbl">
+        <thead><tr><th>Date</th><th>Description</th><th>Debit</th><th>Credit</th><th>Auto-Category</th></tr></thead>
+        <tbody>
+          ${pendingImport.slice(0,20).map(r=>`<tr>
+            <td>${r.date}</td>
+            <td style="max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(r.desc)}</td>
+            <td style="color:#d24b4b">${r.debit>0?fmt(r.debit):"—"}</td>
+            <td style="color:#1f9d57">${r.credit>0?fmt(r.credit):"—"}</td>
+            <td style="color:#5b645b">${r.debit>0?(CM[r.cat]?.l||"Uncategorized"):(CCM[r.creditCat]?.l||"Unclassified")}</td>
+          </tr>`).join("")}
+          ${pendingImport.length>20?`<tr><td colspan="5" style="text-align:center;color:#8b948a;padding:8px">… and ${pendingImport.length-20} more</td></tr>`:""}
+        </tbody>
+      </table>
+    </div>`;
+
+  btn.style.display=pendingImport.length?"flex":"none";
+}
+
+window.setImportAcct=v=>{
+  if(v==="__new"){
+    const name=(prompt("Enter a name for this bank account (e.g. SBI Current (...4521)):")||"").trim();
+    const sel=document.getElementById("import-acct-sel");
+    if(!name){ sel.value=pendingImport[0]?.acct||"Imported"; return; }
+    const opt=document.createElement("option");
+    opt.value=name; opt.textContent=name;
+    sel.insertBefore(opt, sel.querySelector('option[value="__new"]'));
+    sel.value=name;
+    pendingImport.forEach(t=>t.acct=name);
+    return;
+  }
+  pendingImport.forEach(t=>t.acct=v);
+};
+
+window.confirmImport = async () => {
+  if (!pendingImport.length) return;
+  let saved;
+  try {
+    saved = await API.post('/api/txns', { txns: pendingImport });
+  } catch (e) { alert('Import failed: ' + e.message); return; }
+  TXNS.push(...saved);
+  TXNS.sort((a,b) => a.date.localeCompare(b.date));
+  closeModal("upload-modal");
+  renderTransactions();
+  alert(`\u2713 ${saved.length} transactions imported successfully!`);
+  pendingImport = [];
+};
+
+
+// ─────────────────────────────────────────────────────────────────────────────
+// VOUCHER MODAL
+// ─────────────────────────────────────────────────────────────────────────────
+window.openVoucher = id => {
+  const t=TXNS.find(x=>x.id===id);
+  if(!t) return;
+  const defNum=t.voucher||`VCH-${t.date.replace(/-/g,"")}-${t.id.slice(-3).toUpperCase()}`;
+  const catLabel=t.debit>0?(CM[t.cat]?.l||"Uncategorized"):(CCM[t.creditCat]?.l||"Unclassified");
+  const rdLabel=t.rd==="rd"?"R&D Expense":t.rd==="non-rd"?"Non-R&D Expense":"—";
+
+  document.getElementById("voucher-content").innerHTML=`
+    <div style="background:#f7f9f3;border-radius:10px;padding:16px;border:1px solid #d6dcc9;margin-bottom:16px">
+      <div style="display:flex;justify-content:space-between;margin-bottom:2px">
+        <span class="vp-company">ROOTSGOODS PVT LTD</span>
+        <span style="font-size:10px;color:#8b948a">SBI CC · ...987782</span>
+      </div>
+      <div class="vp-addr">SRI VENKATADRI NIVASA, ARB COLONY ASHOK NAGAR, SHIMOGA – 577205</div>
+      <div class="vp-grid">
+        <div><div class="vp-label">Voucher No.</div><div class="vp-val" id="vp-num">${esc(defNum)}</div></div>
+        <div><div class="vp-label">Type</div><div class="vp-val" id="vp-type">${t.debit>0?"Payment Voucher":"Receipt Voucher"}</div></div>
+        <div><div class="vp-label">Date</div><div class="vp-val">${t.date}</div></div>
+        <div><div class="vp-label">Amount</div><div class="vp-val">${t.debit>0?fmt(t.debit):fmt(t.credit)}</div></div>
+        <div><div class="vp-label">Flow</div><div class="vp-val">${t.debit>0?"DEBIT (Payment)":"CREDIT (Receipt)"}</div></div>
+        <div><div class="vp-label">Category</div><div class="vp-val">${esc(catLabel)}</div></div>
+        <div><div class="vp-label">R&D Class.</div><div class="vp-val">${rdLabel}</div></div>
+        <div><div class="vp-label">Invoice</div><div class="vp-val" id="vp-inv">${esc(t.invoice||"—")}</div></div>
+      </div>
+      <div class="vp-desc">${esc(t.desc)}</div>
+      <div id="vp-notes-prev" style="margin-top:5px;font-size:10px;color:#8b948a;font-style:italic">${esc(t.notes||"")}</div>
+    </div>
+    <div class="form-field"><div class="form-label">Voucher Number</div>
+      <input type="text" class="modal-inp" id="f-num" value="${esc(defNum)}" oninput="document.getElementById('vp-num').textContent=this.value"/></div>
+    <div class="form-field"><div class="form-label">Voucher Type</div>
+      <select class="modal-inp" id="f-type" onchange="document.getElementById('vp-type').textContent=this.value">
+        ${["Payment Voucher","Receipt Voucher","Journal Voucher","Contra Voucher"].map(o=>`<option ${(t.debit>0&&o==="Payment Voucher"||t.credit>0&&o==="Receipt Voucher")?"selected":""}>${o}</option>`).join("")}
+      </select></div>
+    <div class="form-field"><div class="form-label">Invoice / Reference No.</div>
+      <input type="text" class="modal-inp" id="f-inv" value="${esc(t.invoice||"")}" oninput="document.getElementById('vp-inv').textContent=this.value||'—'"/></div>
+    <div class="form-field"><div class="form-label">Notes / Narration</div>
+      <textarea class="modal-inp" id="f-notes" rows="3" oninput="document.getElementById('vp-notes-prev').textContent=this.value">${esc(t.notes||"")}</textarea></div>
+    <div class="modal-actions">
+      <button class="btn-primary" onclick="saveVoucher('${id}')">Save Voucher</button>
+      <button class="btn-secondary" onclick="closeModal('voucher-modal')">Cancel</button>
+    </div>`;
+  document.getElementById("voucher-modal").classList.add("open");
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// LEDGERS — user-defined accounting heads
+// ─────────────────────────────────────────────────────────────────────────────
+let _ledgerTab="exp", _ledgerPendingTxn=null;
+
+window.openLedgerModal=(tab,txnId)=>{
+  _ledgerTab=tab||"exp"; _ledgerPendingTxn=txnId||null;
+  renderLedgerModal();
+  document.getElementById("ledger-modal").classList.add("open");
+  setTimeout(()=>{const i=document.getElementById("new-ledger-name"); if(i) i.focus();},60);
+};
+window.closeLedgerModal=()=>{
+  closeModal("ledger-modal");
+  if(_ledgerPendingTxn){_ledgerPendingTxn=null;}
+  renderTransactions();
+};
+window.setLedgerTab=t=>{_ledgerTab=t;renderLedgerModal();};
+
+function renderLedgerModal(){
+  const isExp=_ledgerTab==="exp";
+  const customs=isExp?CUSTOM_LEDGERS.exp:CUSTOM_LEDGERS.cr;
+  const builtins=(isExp?DEFAULT_CATS:DEFAULT_CREDIT_CATS).filter(c=>c.v);
+  const usage=v=>TXNS.filter(t=>isExp?t.cat===v:t.creditCat===v).length;
+  const tabBtn=(t,lbl)=>`<button onclick="setLedgerTab('${t}')" style="flex:1;padding:9px;border-radius:9px;border:1px solid ${_ledgerTab===t?"#5f8a1e":"#d6dcc9"};background:${_ledgerTab===t?"#eef4e0":"#ffffff"};color:${_ledgerTab===t?"#4c7015":"#5b645b"};font-weight:${_ledgerTab===t?"800":"600"};font-size:12px;cursor:pointer;font-family:inherit">${lbl}</button>`;
+
+  const customRows=customs.map(c=>{
+    const n=usage(c.v);
+    return `<div style="display:flex;align-items:center;gap:9px;padding:8px 0;border-bottom:1px solid #e4e8dd">
+      <span style="width:10px;height:10px;border-radius:3px;background:${c.c};flex-shrink:0"></span>
+      <input value="${esc(c.l)}" onchange="renameLedger('${isExp?"exp":"cr"}','${c.v}',this.value)" style="flex:1;background:#f7f9f3;border:1px solid #e4e8dd;border-radius:7px;padding:6px 10px;font-size:12px;color:#242c26;outline:none;font-family:inherit"/>
+      <span style="font-size:10.5px;color:#8b948a;white-space:nowrap">${n} txn${n===1?"":"s"}</span>
+      <button data-armed="0" onclick="deleteLedger('${isExp?"exp":"cr"}','${c.v}',this)" style="background:none;border:1px solid #d6dcc9;border-radius:7px;padding:5px 10px;font-size:10.5px;color:#8b948a;cursor:pointer;font-family:inherit;white-space:nowrap">Delete</button>
+    </div>`;
+  }).join("");
+
+  document.getElementById("ledger-content").innerHTML=`
+    <div style="display:flex;gap:8px;margin-bottom:16px">
+      ${tabBtn("exp","Expense Ledgers")}
+      ${tabBtn("cr","Revenue / Credit Ledgers")}
+    </div>
+    <div style="display:flex;gap:8px;margin-bottom:6px">
+      <input type="text" id="new-ledger-name" placeholder="New ${isExp?"expense":"revenue"} head, e.g. ${isExp?"Travel & Conveyance":"Consulting Income"}" maxlength="48"
+        onkeydown="if(event.key==='Enter')addLedger()"
+        style="flex:1;background:#ffffff;border:1px solid #d6dcc9;border-radius:9px;padding:9px 12px;font-size:12.5px;color:#242c26;outline:none;font-family:inherit"/>
+      <button class="btn-primary" style="flex:none;padding:9px 18px;font-size:12.5px" onclick="addLedger()">＋ Add</button>
+    </div>
+    <div id="ledger-err" style="color:#d24b4b;font-size:11.5px;min-height:16px;margin-bottom:8px;font-weight:600"></div>
+    <div style="font-size:10.5px;font-weight:800;color:#8b948a;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px">Your ledgers</div>
+    ${customRows||`<p style="font-size:12px;color:#8b948a;padding:8px 0 10px">No custom ledgers yet — add one above.</p>`}
+    <div style="font-size:10.5px;font-weight:800;color:#8b948a;text-transform:uppercase;letter-spacing:.5px;margin:16px 0 4px">Built-in ledgers</div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px">
+      ${builtins.map(c=>`<span style="display:inline-flex;align-items:center;gap:6px;background:#f7f9f3;border:1px solid #e4e8dd;border-radius:20px;padding:4px 11px;font-size:11px;color:#5b645b;font-weight:600"><span style="width:8px;height:8px;border-radius:50%;background:${c.c}"></span>${c.l}</span>`).join("")}
+    </div>`;
+}
+
+window.addLedger=()=>{
+  const inp=document.getElementById("new-ledger-name");
+  const err=document.getElementById("ledger-err");
+  const label=(inp.value||"").trim();
+  if(!label){err.textContent="Enter a ledger name.";return;}
+  const all=[...CATS,...CREDIT_CATS];
+  if(all.some(c=>c.l.toLowerCase()===label.toLowerCase())){err.textContent="A ledger with this name already exists.";return;}
+  const type=_ledgerTab;
+  const v=ledgerSlug(label,type);
+  const color=LEDGER_PALETTE[(CUSTOM_LEDGERS.exp.length+CUSTOM_LEDGERS.cr.length)%LEDGER_PALETTE.length];
+  CUSTOM_LEDGERS[type].push({v,l:label,c:color,custom:true});
+  saveLedgers();
+  if(_ledgerPendingTxn){
+    if(type==="exp") updTxn(_ledgerPendingTxn,{cat:v,rd:autoRd(v)});
+    else updTxn(_ledgerPendingTxn,{creditCat:v});
+    _ledgerPendingTxn=null;
+    closeModal("ledger-modal");
+    renderTransactions();
+  } else {
+    inp.value="";
+    renderLedgerModal();
+  }
+};
+
+window.renameLedger=(type,v,label)=>{
+  label=(label||"").trim();
+  const led=CUSTOM_LEDGERS[type].find(x=>x.v===v);
+  if(!led||!label){renderLedgerModal();return;}
+  led.l=label; saveLedgers(); renderLedgerModal();
+};
+
+window.deleteLedger=(type,v,btn)=>{
+  if(btn.dataset.armed!=="1"){
+    btn.dataset.armed="1";
+    btn.textContent="Confirm delete";
+    btn.style.color="#d24b4b"; btn.style.borderColor="#d24b4b"; btn.style.fontWeight="700";
+    setTimeout(()=>{if(btn.isConnected){btn.dataset.armed="0";btn.textContent="Delete";btn.style.color="#8b948a";btn.style.borderColor="#d6dcc9";btn.style.fontWeight="400";}},3000);
+    return;
+  }
+  // Reassign affected transactions to Uncategorized, then remove the ledger
+  TXNS.forEach(t=>{
+    if(type==="exp"&&t.cat===v){t.cat="";t.rd="";}
+    if(type==="cr"&&t.creditCat===v){t.creditCat="";}
+  });
+  save();
+  const arr=CUSTOM_LEDGERS[type];
+  const i=arr.findIndex(x=>x.v===v);
+  if(i>-1) arr.splice(i,1);
+  saveLedgers();
+  renderLedgerModal();
+};
+
+window.saveVoucher = id => {
+  updTxn(id,{voucher:document.getElementById("f-num").value.trim()||"VCH-"+id,
+              notes:document.getElementById("f-notes").value,
+              invoice:document.getElementById("f-inv").value});
+  closeModal("voucher-modal");
+  renderTransactions();
+};
+
+document.querySelectorAll(".modal-bg").forEach(m=>m.addEventListener("click",e=>{if(e.target===m)m.classList.remove("open");}));
+
+// ─────────────────────────────────────────────────────────────────────────────
+// BOOT
+// ─────────────────────────────────────────────────────────────────────────────
+
+// ─────────────────────────────────────────────────────────────────────────────
+// AUTH & USER MANAGEMENT
+// ─────────────────────────────────────────────────────────────────────────────
+const USERS_KEY = 'rg_users_v1';
+const SESSION_KEY = 'rg_session_v1';
+
+const ROLE_LABELS = {ceo:'CEO',ca:'Chartered Accountant',ja:'Junior Accountant'};
+const ROLE_COLORS = {ceo:'rb-ceo',ca:'rb-ca',ja:'rb-ja'};
+const ROLE_NAV = {
+  ceo:['dashboard','transactions','reports','banking','revenue','ca','users'],
+  ca:['dashboard','reports','banking','revenue','ca'],
+  ja:['dashboard','transactions','banking'],
+};
+const ROLE_INITIALS_BG = {ceo:'#fcf3e2',ca:'#eef4e0',ja:'#eafaf1'};
+const ROLE_INITIALS_C  = {ceo:'#a86a0c',ca:'#5f8a1e',ja:'#1f9d57'};
+
+let currentUser = null;
+
+let USERS_CACHE = [];               // populated after login (CEO only)
+let CA_CACHE = {};                  // populated after login
+function getUsers() { return USERS_CACHE; }
+
+// Load all shared data from the server into memory after a successful login.
+async function loadAllData() {
+  const role = currentUser && currentUser.role;
+  // txns + ledgers are readable by every role
+  const [txns, ledgers] = await Promise.all([
+    API.get('/api/txns'),
+    API.get('/api/ledgers'),
+  ]);
+  TXNS = Array.isArray(txns) ? txns : [];
+  CUSTOM_LEDGERS = { exp: (ledgers && ledgers.exp) || [], cr: (ledgers && ledgers.cr) || [] };
+  rebuildLedgers();
+  // ca-reports (ceo/ca only) and users (ceo only) — role-gated and non-fatal
+  CA_CACHE = {};
+  if (role === 'ceo' || role === 'ca') {
+    try { CA_CACHE = (await API.get('/api/ca-reports')) || {}; } catch (e) { CA_CACHE = {}; }
+  }
+  USERS_CACHE = [];
+  if (role === 'ceo') {
+    try { USERS_CACHE = await API.get('/api/users'); } catch (e) { USERS_CACHE = []; }
+  }
+  // Default date range: current FY if it has data, else the full data span
+  if (TXNS.length) {
+    const hasData = TXNS.some(t => t.date >= fDateFrom && t.date <= fDateTo);
+    if (!hasData) { const ds = TXNS.map(t => t.date).sort(); fDateFrom = ds[0]; fDateTo = ds[ds.length-1]; }
+  }
+}
+
+async function doLogin() {
+  const uname = (document.getElementById('l-user')?.value || '').trim().toLowerCase();
+  const pass  = document.getElementById('l-pass')?.value || '';
+  const err   = document.getElementById('l-err');
+  err.textContent = '';
+  if (!uname || !pass) { err.textContent = 'Please enter username and password.'; return; }
+  try {
+    const u = await API.post('/api/login', { username: uname, password: pass });
+    currentUser = { username: u.username, role: u.role, name: u.name };
+  } catch (e) {
+    err.textContent = e.status === 401 ? 'Invalid username or password.' : ('Login failed: ' + e.message);
+    return;
+  }
+  await applyLogin();
+}
+
+async function doLogout() {
+  try { await API.post('/api/logout', {}); } catch (e) {}
+  currentUser = null;
+  document.getElementById('login-wrap').classList.remove('hidden');
+  document.getElementById('app').style.display = 'none';
+  document.getElementById('l-pass').value = '';
+  document.getElementById('l-err').textContent = '';
+}
+
+async function applyLogin() {
+  document.getElementById('login-wrap').classList.add('hidden');
+  document.getElementById('app').style.display = 'flex';
+  document.getElementById('sb-user-info').innerHTML =
+    `<div style="font-weight:600;color:#242c26;font-size:12px">${esc(currentUser.name)}</div>
+     <span class="rb ${ROLE_COLORS[currentUser.role]||'rb-ja'}" style="margin-top:3px;display:inline-block">${ROLE_LABELS[currentUser.role]||currentUser.role}</span>`;
+  const allowed = ROLE_NAV[currentUser.role] || ['dashboard'];
+  document.querySelectorAll('.nav-item[data-view]').forEach(el => {
+    const v = el.getAttribute('data-view');
+    el.style.display = allowed.includes(v) ? 'flex' : 'none';
+  });
+  const nu = document.getElementById('nav-users');
+  if (nu) nu.style.display = currentUser.role === 'ceo' ? 'flex' : 'none';
+  const nc = document.getElementById('nav-ca');
+  if (nc) nc.style.display = allowed.includes('ca') ? 'flex' : 'none';
+  try { await loadAllData(); } catch (e) { API.toast('Could not load data: ' + e.message); }
+  // Navigate to first allowed view
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  const firstEl = document.querySelector(`.nav-item[data-view="${allowed[0]}"]`);
+  if (firstEl) nav(firstEl, allowed[0]);
+}
+
+async function initAuth() {
+  document.getElementById('app').style.display = 'none';
+  try {
+    const u = await API.get('/api/me');                 // 200 if the session cookie is valid
+    currentUser = { username: u.username, role: u.role, name: u.name };
+    await applyLogin();
+  } catch (e) {
+    // Not logged in — just show the login screen. Credentials are provisioned by
+    // the administrator (see deployment docs); never printed on the login page.
+    const hint = document.getElementById('l-hint');
+    if (hint) hint.style.display = 'none';
+    document.getElementById('login-wrap').classList.remove('hidden');
+  }
+}
+
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CSV EXPORT
+// ─────────────────────────────────────────────────────────────────────────────
+function exportCSV() {
+  const fil = TXNS.filter(t=>((!fDateFrom||t.date>=fDateFrom)&&(!fDateTo||t.date<=fDateTo)));
+  const hdr = ['Date','Description','Debit','Credit','Expense Category','Revenue Source','R&D Type','Account','Voucher','Invoice','Notes'];
+  const rows = fil.map(t => [
+    t.date,
+    '"'+String(t.desc||'').replace(/"/g,'""')+'"',
+    t.debit||0,
+    t.credit||0,
+    '"'+(CM[t.cat]?.l||t.cat||'')+'"',
+    '"'+(CCM[t.creditCat]?.l||t.creditCat||'')+'"',
+    t.rd||'',
+    t.acct||'',
+    t.voucher||'',
+    t.invoice||'',
+    '"'+String(t.notes||'').replace(/"/g,'""')+'"',
+  ]);
+  const from = fDateFrom||TXNS[0]?.date||'';
+  const to   = fDateTo||TXNS[TXNS.length-1]?.date||'';
+  const csv  = [hdr, ...rows].map(r=>r.join(',')).join('\n');
+  const blob = new Blob([csv], {type:'text/csv'});
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href=url; a.download=`ROOTSGOODS_${from||'all'}_to_${to||'all'}.csv`;
+  a.click(); URL.revokeObjectURL(url);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MANAGE USERS VIEW (CEO only)
+// ─────────────────────────────────────────────────────────────────────────────
+function renderUsers() {
+  if (!currentUser||currentUser.role!=='ceo') return;
+  const users = getUsers();
+  
+  const userRows = users.map(u => {
+    const initials = (u.name||u.username).split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
+    const isCEO = u.role==='ceo';
+    return `<div class="user-row">
+      <div class="uavatar" style="background:${ROLE_INITIALS_BG[u.role]||'#eef4e0'};color:${ROLE_INITIALS_C[u.role]||'#5f8a1e'}">${esc(initials)}</div>
+      <div style="flex:1;min-width:0">
+        <div style="font-weight:600;color:#242c26;font-size:13px">${esc(u.name)}</div>
+        <div style="font-size:10px;color:#6b756d;margin-top:2px">@${esc(u.username)}</div>
+      </div>
+      <span class="rb ${ROLE_COLORS[u.role]||'rb-ja'}">${ROLE_LABELS[u.role]||u.role}</span>
+      <div style="display:flex;align-items:center;gap:6px">
+        <span class="pwd-pill">•••••• (hashed)</span>
+      </div>
+      ${!isCEO?`
+        <button class="btn" style="font-size:11px;padding:4px 10px" onclick="openEditUser('${esc(u.username)}')">Edit</button>
+        <button class="btn" style="font-size:11px;padding:4px 10px;color:#d24b4b;border-color:#fbecec" onclick="deleteUser('${esc(u.username)}')">Delete</button>
+      `:`<button class="btn" style="font-size:11px;padding:4px 10px" onclick="openEditUser('${esc(u.username)}')">Change Pwd</button>`}
+    </div>`;
+  }).join('');
+
+  document.getElementById('view-users').innerHTML=`
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px">
+      <div>
+        <div class="page-title">Manage Users</div>
+        <div class="page-sub">Create and manage login access for your team.</div>
+      </div>
+      <button class="btn btn-green" onclick="openAddUser()">+ Add New User</button>
+    </div>
+
+    <div style="background:#f7f9f3;border-radius:8px;padding:10px 14px;margin-bottom:14px;font-size:11px;color:#8b948a">
+      🔒 Accounts are stored on the server with hashed passwords. Access is controlled by login and role — share credentials only with authorised staff over a secure channel.
+    </div>
+
+    <div class="card" style="padding:0;overflow:hidden">
+      <div style="background:#f7f9f3;padding:9px 16px;font-size:10px;font-weight:700;color:#8b948a;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:14px">
+        <span style="width:36px"></span><span style="flex:1">Name / Username</span><span>Role</span><span>Password</span><span style="min-width:120px"></span>
+      </div>
+      ${userRows}
+    </div>
+
+    <!-- Add/Edit User Form (inline, hidden by default) -->
+    <div id="user-form-wrap" style="display:none">
+      <div class="card" style="margin-top:14px">
+        <div class="card-title" id="uf-title">Add New User</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <div><div class="form-label">Full Name</div><input class="modal-inp" id="uf-name" type="text" placeholder="e.g. Priya Sharma"/></div>
+          <div><div class="form-label">Username</div><input class="modal-inp" id="uf-user" type="text" placeholder="e.g. priya_ca"/></div>
+          <div><div class="form-label">Password</div><input class="modal-inp" id="uf-pass" type="text" placeholder="Set a strong password"/></div>
+          <div><div class="form-label">Role</div>
+            <select class="modal-inp" id="uf-role">
+              <option value="ca">Chartered Accountant (CA)</option>
+              <option value="ja">Junior Accountant (JA)</option>
+              <option value="ceo" style="display:none">CEO</option>
+            </select>
+          </div>
+        </div>
+        <input type="hidden" id="uf-editing"/>
+        <div style="display:flex;gap:10px;margin-top:14px">
+          <button class="btn-primary" style="flex:none;padding:8px 24px;font-size:13px" onclick="saveUser()">Save User</button>
+          <button class="btn-secondary" style="padding:8px 16px;font-size:13px" onclick="document.getElementById('user-form-wrap').style.display='none'">Cancel</button>
+          <span id="uf-err" style="color:#d24b4b;font-size:12px;align-self:center"></span>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+window.togglePwd = (uname, pwd) => {
+  const el = document.getElementById('pwd-'+uname);
+  if (!el) return;
+  el.textContent = el.textContent==='••••••••' ? pwd : '••••••••';
+};
+
+window.openAddUser = () => {
+  document.getElementById('uf-title').textContent='Add New User';
+  document.getElementById('uf-name').value='';
+  document.getElementById('uf-user').value='';
+  document.getElementById('uf-pass').value='';
+  document.getElementById('uf-role').value='ca';
+  document.getElementById('uf-editing').value='';
+  document.getElementById('uf-err').textContent='';
+  document.getElementById('uf-user').disabled=false;
+  document.getElementById('user-form-wrap').style.display='block';
+  document.getElementById('user-form-wrap').scrollIntoView({behavior:'smooth'});
+};
+
+window.openEditUser = (uname) => {
+  const u = getUsers().find(x=>x.username===uname);
+  if (!u) return;
+  document.getElementById('uf-title').textContent='Edit User: '+u.name;
+  document.getElementById('uf-name').value=u.name;
+  document.getElementById('uf-user').value=u.username;
+  document.getElementById('uf-pass').value='';
+  document.getElementById('uf-role').value=u.role;
+  document.getElementById('uf-editing').value=u.username;
+  document.getElementById('uf-err').textContent='';
+  document.getElementById('uf-user').disabled=true; // can't change username
+  document.getElementById('user-form-wrap').style.display='block';
+  document.getElementById('user-form-wrap').scrollIntoView({behavior:'smooth'});
+};
+
+window.saveUser = async () => {
+  const name    = document.getElementById('uf-name').value.trim();
+  const uname   = document.getElementById('uf-user').value.trim().toLowerCase().replace(/\s+/g,'_');
+  const pass    = document.getElementById('uf-pass').value.trim();
+  const role    = document.getElementById('uf-role').value;
+  const editing = document.getElementById('uf-editing').value;
+  const errEl   = document.getElementById('uf-err');
+
+  if (!name)  { errEl.textContent='Name is required.'; return; }
+  if (!uname) { errEl.textContent='Username is required.'; return; }
+  if (!editing && !pass) { errEl.textContent='Password is required.'; return; }
+  if (pass && pass.length<6) { errEl.textContent='Password must be at least 6 characters.'; return; }
+
+  try {
+    if (editing) {
+      const body = { name, role };
+      if (pass) body.password = pass;              // only change password if a new one was typed
+      await API.put('/api/users/'+encodeURIComponent(editing), body);
+    } else {
+      await API.post('/api/users', { username:uname, password:pass, role, name });
+    }
+  } catch (e) {
+    errEl.textContent = e.status===409 ? 'Username already taken.' : ('Save failed: '+e.message);
+    return;
+  }
+  try { USERS_CACHE = await API.get('/api/users'); } catch(e){}
+  document.getElementById('user-form-wrap').style.display='none';
+  renderUsers();
+};
+
+window.deleteUser = async (uname) => {
+  if (uname==='ceo'||uname===currentUser?.username) { alert('Cannot delete the CEO account or your own account.'); return; }
+  if (!confirm(`Delete user "${uname}"? This cannot be undone.`)) return;
+  try { await API.del('/api/users/'+encodeURIComponent(uname)); }
+  catch (e) { alert('Delete failed: '+e.message); return; }
+  try { USERS_CACHE = await API.get('/api/users'); } catch(e){}
+  renderUsers();
+};
+
+
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CA MANAGEMENT SUMMARY
+// ─────────────────────────────────────────────────────────────────────────────
+const CA_KEY = 'rg_ca_v1';
+
+function getCAReports(){ return CA_CACHE; }
+function getCAReport(from,to){
+  const r=getCAReports();
+  const k=`${from}_${to}`;
+  return r[k]||{from,to,achievements:'',concerns:'',actionItems:[],compliance:[],inflows:[],outflows:[],priorities:[],updatedAt:'',updatedBy:''};
+}
+function saveCAReport(rpt){
+  const key=`${rpt.from}_${rpt.to}`;
+  const rec={...rpt,updatedAt:new Date().toISOString(),updatedBy:currentUser?.name||'CA'};
+  CA_CACHE[key]=rec;
+  API.put('/api/ca-reports/'+encodeURIComponent(key), rec)
+     .catch(e=>API.toast('Could not save report: '+e.message));
+}
+
+
+// ── Saved reports list + PDF export ─────────────────────────────────────────
+function caPeriodLabel(from,to){
+  const f=new Date(from+'T00:00'),t=new Date(to+'T00:00');
+  const o={month:'short',year:'numeric'};
+  const a=f.toLocaleDateString('en-IN',o),b=t.toLocaleDateString('en-IN',o);
+  return a===b?a:`${a} – ${b}`;
+}
+function caSavedListHTML(){
+  const all=getCAReports();
+  const keys=Object.keys(all).sort((a,b)=>b.localeCompare(a)); // newest first
+  if(!keys.length) return `<p style="font-size:12px;color:#8b948a;padding:4px 0">No saved reports yet — fill in the summary above and click Save Report.</p>`;
+  return `
+    <div style="display:flex;flex-direction:column;gap:0">
+      ${keys.map(k=>{const r=all[k];return `
+        <div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #e4e8dd">
+          <div style="flex:1;min-width:0">
+            <div style="font-size:13px;font-weight:700;color:#242c26">${caPeriodLabel(r.from,r.to)}</div>
+            <div style="font-size:10.5px;color:#8b948a;margin-top:2px">${r.from} → ${r.to}${r.updatedAt?` · saved ${r.updatedAt.slice(0,10)} by ${esc(r.updatedBy||'')}`:''}</div>
+          </div>
+          <button class="btn" style="font-size:11.5px;padding:6px 12px" onclick="caLoadSaved('${k}')">Open</button>
+          <button class="dl-btn" style="font-size:11.5px;padding:6px 14px" onclick="caExportPDF('${k}')">⬇ Export PDF</button>
+        </div>`;}).join('')}
+    </div>`;
+}
+window.caLoadSaved=k=>{
+  const r=getCAReports()[k]; if(!r) return;
+  _caPeriodFrom=r.from; _caPeriodTo=r.to; renderCA();
+  document.getElementById('main').scrollTop=0;
+};
+window.caExportPDF=k=>{
+  const r=getCAReports()[k]; if(!r) return;
+  // Auto stats for the report period
+  const sub=TXNS.filter(t=>(!r.from||t.date>=r.from)&&(!r.to||t.date<=r.to));
+  const totIn=sub.reduce((s,t)=>s+t.credit,0), totOut=sub.reduce((s,t)=>s+t.debit,0);
+  const rows=(arr,cols)=>!arr||!arr.length?'<tr><td colspan="'+cols.length+'" style="color:#999;text-align:center">—</td></tr>'
+    :arr.map(x=>'<tr>'+cols.map(c=>`<td>${esc(String(x[c]??''))}</td>`).join('')+'</tr>').join('');
+  const sec=(title,inner)=>`<h2>${title}</h2>${inner}`;
+  const tbl=(heads,body)=>`<table><thead><tr>${heads.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table>`;
+  const w=window.open('','_blank');
+  if(!w){alert('Please allow pop-ups to export the PDF.');return;}
+  w.document.write(`<!DOCTYPE html><html><head><meta charset="utf-8"/>
+  <title>CA Summary ${r.from} to ${r.to} — ROOTSGOODS</title>
+  <style>
+    body{font-family:Georgia,'Times New Roman',serif;color:#1a1f1a;margin:40px auto;max-width:720px;font-size:13px;line-height:1.6}
+    h1{font-size:20px;margin:0}
+    .sub{color:#666;font-size:12px;margin:4px 0 6px}
+    .meta{color:#666;font-size:11px;border-bottom:2px solid #1a1f1a;padding-bottom:14px;margin-bottom:8px}
+    h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;margin:26px 0 8px;border-bottom:1px solid #ccc;padding-bottom:4px}
+    table{width:100%;border-collapse:collapse;font-size:12px}
+    th{text-align:left;padding:6px 8px;background:#f2f2ee;border:1px solid #ddd;font-size:10.5px;text-transform:uppercase;letter-spacing:.5px}
+    td{padding:6px 8px;border:1px solid #ddd;vertical-align:top}
+    .stats{display:flex;gap:24px;margin:8px 0}
+    .stats div{flex:1;border:1px solid #ddd;padding:10px 12px}
+    .stats .l{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:#666}
+    .stats .v{font-size:16px;font-weight:bold;margin-top:2px}
+    p.free{white-space:pre-wrap;margin:6px 0}
+    @media print{body{margin:10mm auto}}
+  </style></head><body>
+  <h1>ROOTSGOODS PRIVATE LIMITED</h1>
+  <div class="sub">CA Management Summary</div>
+  <div class="meta">Period: ${r.from} to ${r.to}${r.updatedAt?` · Prepared by ${esc(r.updatedBy||'CA')} · Saved ${r.updatedAt.slice(0,10)}`:''}</div>
+  <div class="stats">
+    <div><div class="l">Total Inflows</div><div class="v">${fmt(totIn)}</div></div>
+    <div><div class="l">Total Outflows</div><div class="v">${fmt(totOut)}</div></div>
+    <div><div class="l">Net</div><div class="v">${fmt(totIn-totOut)}</div></div>
+  </div>
+  ${sec('Key Achievements',`<p class="free">${esc(r.achievements||'—')}</p>`)}
+  ${sec('Key Concerns',`<p class="free">${esc(r.concerns||'—')}</p>`)}
+  ${sec('Action Items',tbl(['Action Item','Priority','Owner','Due Date','Status'],rows(r.actionItems,['title','priority','owner','dueDate','status'])))}
+  ${sec('Compliance Status',tbl(['Item','Status','Due Date','Notes'],rows(r.compliance,['item','status','dueDate','notes'])))}
+  ${sec('Expected Cash Inflows',tbl(['Source','Amount (₹)','Expected By','Notes'],rows(r.inflows,['desc','amount','expectedDate','notes'])))}
+  ${sec('Expected Cash Outflows',tbl(['Purpose','Amount (₹)','Expected By','Notes'],rows(r.outflows,['desc','amount','expectedDate','notes'])))}
+  ${sec('Strategic Priorities',tbl(['Priority','Description','Timeline','Status'],rows(r.priorities,['title','desc','timeline','status'])))}
+  <script>window.onload=()=>setTimeout(()=>window.print(),300);<\/script>
+  </body></html>`);
+  w.document.close();
+};
+
+let _caReport = null; // current working report
+let _caPeriodFrom = '', _caPeriodTo = '';
+
+function renderCA(){
+  if(!_caPeriodFrom){const fy=indianFY();_caPeriodFrom=fy.from;_caPeriodTo=fy.to;}
+  _caReport = getCAReport(_caPeriodFrom, _caPeriodTo);
+  _renderCAView();
+}
+
+function _renderCAView(){
+  const rpt = _caReport;
+  if(!rpt) return;
+  // Compute auto stats from transactions for this period
+  const sub = TXNS.filter(t=>(!_caPeriodFrom||t.date>=_caPeriodFrom)&&(!_caPeriodTo||t.date<=_caPeriodTo));
+  const totIn  = sub.reduce((s,t)=>s+t.credit,0);
+  const totOut = sub.reduce((s,t)=>s+t.debit,0);
+  const rdExp  = sub.filter(t=>t.rd==='rd').reduce((s,t)=>s+t.debit,0);
+  const opRev  = sub.filter(t=>t.credit>0&&t.creditCat&&t.creditCat!=='intra_in').reduce((s,t)=>s+t.credit,0);
+  const uncat  = sub.filter(t=>(t.debit>0&&!t.cat)||(t.credit>0&&!t.creditCat)).length;
+  const net    = totIn - totOut;
+  const expInflowsTotal = (rpt.inflows||[]).reduce((s,i)=>s+Number(i.amount||0),0);
+  const expOutflowsTotal= (rpt.outflows||[]).reduce((s,i)=>s+Number(i.amount||0),0);
+
+  const aiRows = (rpt.actionItems||[]).map((a,i)=>`<tr>
+    <td><input class="ca-inp" value="${esc(a.title)}" onchange="caUpdateField('actionItems',${i},'title',this.value)" style="min-width:160px"/></td>
+    <td><select class="ca-sel" onchange="caUpdateField('actionItems',${i},'priority',this.value)">
+      ${['High','Medium','Low'].map(p=>`<option ${a.priority===p?'selected':''}>${p}</option>`).join('')}
+    </select></td>
+    <td><input class="ca-inp" value="${esc(a.owner||'')}" onchange="caUpdateField('actionItems',${i},'owner',this.value)" style="width:100px"/></td>
+    <td><input class="ca-inp" type="date" value="${esc(a.dueDate||'')}" onchange="caUpdateField('actionItems',${i},'dueDate',this.value)" style="width:120px"/></td>
+    <td><select class="ca-sel" onchange="caUpdateField('actionItems',${i},'status',this.value)">
+      ${['Open','In Progress','Done'].map(s=>`<option ${a.status===s?'selected':''}>${s}</option>`).join('')}
+    </select></td>
+    <td><button onclick="caRemove('actionItems',${i})" style="background:none;border:none;color:#8b948a;cursor:pointer;font-size:14px">✕</button></td>
+  </tr>`).join('');
+
+  const compRows = (rpt.compliance||[]).map((a,i)=>`<tr>
+    <td><input class="ca-inp" value="${esc(a.item)}" onchange="caUpdateField('compliance',${i},'item',this.value)" style="min-width:160px"/></td>
+    <td><select class="ca-sel" onchange="caUpdateField('compliance',${i},'status',this.value)">
+      ${['Compliant','Pending','Overdue','N/A'].map(s=>`<option ${a.status===s?'selected':''}>${s}</option>`).join('')}
+    </select></td>
+    <td><input class="ca-inp" type="date" value="${esc(a.dueDate||'')}" onchange="caUpdateField('compliance',${i},'dueDate',this.value)" style="width:120px"/></td>
+    <td><input class="ca-inp" value="${esc(a.notes||'')}" onchange="caUpdateField('compliance',${i},'notes',this.value)"/></td>
+    <td><button onclick="caRemove('compliance',${i})" style="background:none;border:none;color:#8b948a;cursor:pointer;font-size:14px">✕</button></td>
+  </tr>`).join('');
+
+  const inflowRows = (rpt.inflows||[]).map((a,i)=>`<tr>
+    <td><input class="ca-inp" value="${esc(a.desc)}" onchange="caUpdateField('inflows',${i},'desc',this.value)" style="min-width:160px"/></td>
+    <td><input class="ca-inp" type="number" value="${a.amount||''}" onchange="caUpdateField('inflows',${i},'amount',this.value)" style="width:110px" placeholder="₹"/></td>
+    <td><input class="ca-inp" type="date" value="${esc(a.expectedDate||'')}" onchange="caUpdateField('inflows',${i},'expectedDate',this.value)" style="width:120px"/></td>
+    <td><input class="ca-inp" value="${esc(a.notes||'')}" onchange="caUpdateField('inflows',${i},'notes',this.value)"/></td>
+    <td><button onclick="caRemove('inflows',${i})" style="background:none;border:none;color:#8b948a;cursor:pointer;font-size:14px">✕</button></td>
+  </tr>`).join('');
+
+  const outflowRows = (rpt.outflows||[]).map((a,i)=>`<tr>
+    <td><input class="ca-inp" value="${esc(a.desc)}" onchange="caUpdateField('outflows',${i},'desc',this.value)" style="min-width:160px"/></td>
+    <td><input class="ca-inp" type="number" value="${a.amount||''}" onchange="caUpdateField('outflows',${i},'amount',this.value)" style="width:110px" placeholder="₹"/></td>
+    <td><input class="ca-inp" type="date" value="${esc(a.expectedDate||'')}" onchange="caUpdateField('outflows',${i},'expectedDate',this.value)" style="width:120px"/></td>
+    <td><input class="ca-inp" value="${esc(a.notes||'')}" onchange="caUpdateField('outflows',${i},'notes',this.value)"/></td>
+    <td><button onclick="caRemove('outflows',${i})" style="background:none;border:none;color:#8b948a;cursor:pointer;font-size:14px">✕</button></td>
+  </tr>`).join('');
+
+  const prioRows = (rpt.priorities||[]).map((a,i)=>`<tr>
+    <td><input class="ca-inp" value="${esc(a.title)}" onchange="caUpdateField('priorities',${i},'title',this.value)" style="min-width:130px;font-weight:600"/></td>
+    <td><input class="ca-inp" value="${esc(a.desc||'')}" onchange="caUpdateField('priorities',${i},'desc',this.value)" style="min-width:180px"/></td>
+    <td><input class="ca-inp" value="${esc(a.timeline||'')}" onchange="caUpdateField('priorities',${i},'timeline',this.value)" style="width:110px"/></td>
+    <td><select class="ca-sel" onchange="caUpdateField('priorities',${i},'status',this.value)">
+      ${['Active','On Track','Delayed','Completed'].map(s=>`<option ${a.status===s?'selected':''}>${s}</option>`).join('')}
+    </select></td>
+    <td><button onclick="caRemove('priorities',${i})" style="background:none;border:none;color:#8b948a;cursor:pointer;font-size:14px">✕</button></td>
+  </tr>`).join('');
+
+  const savedInfo = rpt.updatedAt ? `<span style="font-size:11px;color:#8b948a">Last saved: ${rpt.updatedAt.slice(0,16).replace('T',' ')} by ${esc(rpt.updatedBy)}</span>` : `<span style="font-size:11px;color:#d6dcc9">Not yet saved</span>`;
+
+  document.getElementById('view-ca').innerHTML=`
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px;flex-wrap:wrap;gap:12px">
+      <div>
+        <div class="page-title">CA Management Summary</div>
+        <div class="page-sub">Financial highlights, compliance status and strategic outlook for the selected period.</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+        <span style="font-size:11px;color:#8b948a">Period</span>
+        <input type="date" value="${_caPeriodFrom}" onchange="setCAPeriod('from',this.value)" style="background:#ffffff;border:1px solid #d6dcc9;border-radius:6px;padding:5px 8px;font-size:12px;color:#2b332e;outline:none"/>
+        <span style="font-size:11px;color:#8b948a">→</span>
+        <input type="date" value="${_caPeriodTo}" onchange="setCAPeriod('to',this.value)" style="background:#ffffff;border:1px solid #d6dcc9;border-radius:6px;padding:5px 8px;font-size:12px;color:#2b332e;outline:none"/>
+        <button class="btn" style="color:#5f8a1e;border-color:#4c7015;background:#f7f9f3;padding:6px 13px;font-size:12px" onclick="renderCA()">🔍 Load</button>
+        <button class="btn-primary" style="padding:7px 18px;font-size:12px;flex:none" onclick="caSave()">💾 Save Report</button>
+        ${savedInfo}
+      </div>
+    </div>
+
+    <!-- Auto Stats -->
+    <div class="ca-section">
+      <div class="ca-sec-head">📊 Financial Snapshot · ${_caPeriodFrom||'—'} → ${_caPeriodTo||'—'}</div>
+      <div class="ca-sec-body">
+        <div class="ca-auto-grid">
+          <div class="ca-auto-card" style="border-top:2px solid #1f9d57">
+            <div class="ca-auto-label">Total Inflows</div>
+            <div class="ca-auto-val">${fK(totIn)}</div>
+            <div class="ca-auto-sub">Operational: ${fK(opRev)}</div>
+          </div>
+          <div class="ca-auto-card" style="border-top:2px solid #d24b4b">
+            <div class="ca-auto-label">Total Outflows</div>
+            <div class="ca-auto-val">${fK(totOut)}</div>
+            <div class="ca-auto-sub">R&D: ${fK(rdExp)} (${totOut>0?((rdExp/totOut)*100).toFixed(1):0}%)</div>
+          </div>
+          <div class="ca-auto-card" style="border-top:2px solid ${net>=0?'#1f9d57':'#d24b4b'}">
+            <div class="ca-auto-label">Net Cash Flow</div>
+            <div class="ca-auto-val" style="color:${net>=0?'#1f9d57':'#d24b4b'}">${net>=0?'+':''}${fK(net)}</div>
+            <div class="ca-auto-sub">${sub.length} transactions · ${uncat} uncategorized</div>
+          </div>
+          <div class="ca-auto-card" style="border-top:2px solid #1f9d57">
+            <div class="ca-auto-label">Expected Inflows</div>
+            <div class="ca-auto-val" style="color:#1f9d57">${fK(expInflowsTotal)}</div>
+            <div class="ca-auto-sub">${(rpt.inflows||[]).length} items projected</div>
+          </div>
+          <div class="ca-auto-card" style="border-top:2px solid #c07d12">
+            <div class="ca-auto-label">Expected Outflows</div>
+            <div class="ca-auto-val" style="color:#c07d12">${fK(expOutflowsTotal)}</div>
+            <div class="ca-auto-sub">${(rpt.outflows||[]).length} items projected</div>
+          </div>
+          <div class="ca-auto-card" style="border-top:2px solid ${expInflowsTotal-expOutflowsTotal>=0?'#1f9d57':'#d24b4b'}">
+            <div class="ca-auto-label">Projected Net</div>
+            <div class="ca-auto-val" style="color:${expInflowsTotal-expOutflowsTotal>=0?'#1f9d57':'#d24b4b'}">${expInflowsTotal-expOutflowsTotal>=0?'+':''}${fK(expInflowsTotal-expOutflowsTotal)}</div>
+            <div class="ca-auto-sub">Expected cash position</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Achievements -->
+    <div class="ca-section">
+      <div class="ca-sec-head">🏆 Key Achievements</div>
+      <div class="ca-sec-body">
+        <textarea class="ca-ta" rows="4" placeholder="• List major achievements for this period&#10;• Revenue milestones, cost savings, new clients, project completions…" onchange="caField('achievements',this.value)">${esc(rpt.achievements||'')}</textarea>
+      </div>
+    </div>
+
+    <!-- Concerns & Challenges -->
+    <div class="ca-section">
+      <div class="ca-sec-head">⚠ Concerns &amp; Challenges That Need Attention</div>
+      <div class="ca-sec-body">
+        <textarea class="ca-ta" rows="4" placeholder="• Describe key concerns, risks, or challenges&#10;• Cash flow gaps, regulatory issues, operational problems…" onchange="caField('concerns',this.value)">${esc(rpt.concerns||'')}</textarea>
+      </div>
+    </div>
+
+    <!-- Action Items -->
+    <div class="ca-section">
+      <div class="ca-sec-head">✅ Action Items</div>
+      <div class="ca-sec-body" style="padding:0">
+        <div style="overflow-x:auto">
+          <table class="ca-tbl">
+            <thead><tr><th>Action Item</th><th>Priority</th><th>Owner</th><th>Due Date</th><th>Status</th><th style="width:32px"></th></tr></thead>
+            <tbody id="ca-ai-body">${aiRows||'<tr><td colspan="6" style="color:#d6dcc9;text-align:center;padding:16px">No action items. Add one below.</td></tr>'}</tbody>
+          </table>
+        </div>
+        <div style="padding:10px 16px;border-top:1px solid #e4e8dd">
+          <button class="btn" style="font-size:11px;padding:4px 12px" onclick="caAdd('actionItems',{title:'',priority:'High',owner:'',dueDate:'',status:'Open'})">+ Add Action Item</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Compliance -->
+    <div class="ca-section">
+      <div class="ca-sec-head">🔒 Compliance Status</div>
+      <div class="ca-sec-body" style="padding:0">
+        <div style="overflow-x:auto">
+          <table class="ca-tbl">
+            <thead><tr><th>Compliance Item</th><th>Status</th><th>Due Date</th><th>Notes</th><th style="width:32px"></th></tr></thead>
+            <tbody id="ca-comp-body">${compRows||'<tr><td colspan="5" style="color:#d6dcc9;text-align:center;padding:16px">No compliance items. Add one below.</td></tr>'}</tbody>
+          </table>
+        </div>
+        <div style="padding:10px 16px;border-top:1px solid #e4e8dd">
+          <button class="btn" style="font-size:11px;padding:4px 12px" onclick="caAdd('compliance',{item:'GST Filing',status:'Pending',dueDate:'',notes:''})">+ Add Compliance Item</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cash Flow Projections -->
+    <div class="ca-section">
+      <div class="ca-sec-head">💰 Expected Cash Inflows</div>
+      <div class="ca-sec-body" style="padding:0">
+        <div style="overflow-x:auto">
+          <table class="ca-tbl">
+            <thead><tr><th>Source / Description</th><th>Amount (₹)</th><th>Expected By</th><th>Notes</th><th style="width:32px"></th></tr></thead>
+            <tbody>${inflowRows||'<tr><td colspan="5" style="color:#d6dcc9;text-align:center;padding:12px">No expected inflows added.</td></tr>'}</tbody>
+          </table>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-top:1px solid #e4e8dd">
+          <button class="btn" style="font-size:11px;padding:4px 12px" onclick="caAdd('inflows',{desc:'',amount:'',expectedDate:'',notes:''})">+ Add Expected Inflow</button>
+          ${expInflowsTotal>0?`<span style="font-size:12px;font-weight:700;color:#1f9d57">Total Expected: ${fmt(expInflowsTotal)}</span>`:''}
+        </div>
+      </div>
+    </div>
+
+    <div class="ca-section">
+      <div class="ca-sec-head">📤 Expected Cash Outflows</div>
+      <div class="ca-sec-body" style="padding:0">
+        <div style="overflow-x:auto">
+          <table class="ca-tbl">
+            <thead><tr><th>Purpose / Description</th><th>Amount (₹)</th><th>Expected By</th><th>Notes</th><th style="width:32px"></th></tr></thead>
+            <tbody>${outflowRows||'<tr><td colspan="5" style="color:#d6dcc9;text-align:center;padding:12px">No expected outflows added.</td></tr>'}</tbody>
+          </table>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-top:1px solid #e4e8dd">
+          <button class="btn" style="font-size:11px;padding:4px 12px" onclick="caAdd('outflows',{desc:'',amount:'',expectedDate:'',notes:''})">+ Add Expected Outflow</button>
+          ${expOutflowsTotal>0?`<span style="font-size:12px;font-weight:700;color:#c07d12">Total Expected: ${fmt(expOutflowsTotal)}</span>`:''}
+        </div>
+      </div>
+    </div>
+
+    <!-- Strategic Priorities -->
+    <div class="ca-section">
+      <div class="ca-sec-head">🎯 Strategic Priorities</div>
+      <div class="ca-sec-body" style="padding:0">
+        <div style="overflow-x:auto">
+          <table class="ca-tbl">
+            <thead><tr><th>Priority</th><th>Description</th><th>Timeline</th><th>Status</th><th style="width:32px"></th></tr></thead>
+            <tbody>${prioRows||'<tr><td colspan="5" style="color:#d6dcc9;text-align:center;padding:16px">No strategic priorities added.</td></tr>'}</tbody>
+          </table>
+        </div>
+        <div style="padding:10px 16px;border-top:1px solid #e4e8dd">
+          <button class="btn" style="font-size:11px;padding:4px 12px" onclick="caAdd('priorities',{title:'',desc:'',timeline:'',status:'Active'})">+ Add Strategic Priority</button>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:flex-end;gap:10px;margin-top:4px">
+      <button class="btn-primary" style="padding:10px 28px;font-size:13px" onclick="caSave()">💾 Save Report</button>
+    </div>
+
+    <!-- Saved Reports -->
+    <div class="ca-section" style="margin-top:16px">
+      <div class="ca-sec-head">🗂️ Saved Reports — Export as PDF</div>
+      <div class="ca-sec-body">${caSavedListHTML()}</div>
+    </div>
+  `;
+}
+
+window.setCAPeriod = (which,v) => {
+  if(which==='from') _caPeriodFrom=v; else _caPeriodTo=v;
+};
+
+window.caField = (field, val) => {
+  if(!_caReport) return;
+  _caReport[field]=val;
+};
+
+window.caUF = (el, arr, idx, field) => {
+  caUpdateField(arr, idx, field, el.type==='checkbox'?el.checked:el.value);
+};
+window.caUpdateField = (arr, idx, field, val) => {
+  if(!_caReport||!_caReport[arr]) return;
+  _caReport[arr][idx][field]=val;
+};
+
+window.caAdd = (arr, template) => {
+  if(!_caReport) return;
+  if(!_caReport[arr]) _caReport[arr]=[];
+  _caReport[arr].push({...template});
+  _renderCAView();
+  // Scroll to the section
+  setTimeout(()=>{
+    const last = document.querySelectorAll(`[onchange*="${arr}"]`);
+    if(last.length) last[last.length-1].scrollIntoView({behavior:'smooth',block:'nearest'});
+  },50);
+};
+
+window.caRemove = (arr, idx) => {
+  if(!_caReport||!_caReport[arr]) return;
+  _caReport[arr].splice(idx,1);
+  _renderCAView();
+};
+
+window.caSave = () => {
+  if(!_caReport) return;
+  // Collect textarea values (they might not have triggered onchange)
+  const ach=document.querySelector('.ca-ta');
+  if(ach) _caReport.achievements=ach.value;
+  saveCAReport(_caReport);
+  // Show brief feedback
+  const btn=event?.target;
+  if(btn){const orig=btn.textContent;btn.textContent='✓ Saved!';btn.style.background='#eafaf1';setTimeout(()=>{btn.textContent=orig;btn.style.background='';},2000);}
+  _renderCAView(); // refresh saved timestamp
+};
+
+initTxns();
+initAuth();
+</script>
+
+
+</body></html>

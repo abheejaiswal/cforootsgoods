@@ -1,0 +1,28 @@
+# Non-Docker deployment: systemd unit.
+# Install:
+#   sudo cp deploy/rootsgoods.service /etc/systemd/system/
+#   sudo systemctl daemon-reload && sudo systemctl enable --now rootsgoods
+# Assumes the app is deployed to /opt/rootsgoods with an .env file there.
+
+[Unit]
+Description=RootsGoods Financial Manager
+After=network.target
+
+[Service]
+Type=simple
+User=rootsgoods
+Group=rootsgoods
+WorkingDirectory=/opt/rootsgoods
+EnvironmentFile=/opt/rootsgoods/.env
+ExecStart=/usr/bin/node server/server.js
+Restart=on-failure
+RestartSec=3
+# Hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/rootsgoods/data
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
