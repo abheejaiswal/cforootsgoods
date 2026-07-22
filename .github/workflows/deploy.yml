@@ -10,15 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Verify Secrets
+        run: |
+          echo "HOST=${{ secrets.HOST }}"
+          echo "USER=${{ secrets.USER }}"
+          echo "PORT=${{ secrets.PORT }}"
+
       - name: Deploy to VPS
         uses: appleboy/ssh-action@v1.2.2
-
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.PORT }}
-
           script: |
             cd /www/wwwroot/cforootsgoods
 
