@@ -1,3 +1,35 @@
+# services:
+#   app:
+#     build: .
+#     restart: unless-stopped
+#     environment:
+#       NODE_ENV: production
+#       PORT: "3000"
+#       DATA_DIR: /data
+#       # Provide JWT_SECRET and SEED_CEO_PASSWORD via the .env file (same folder).
+#       JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET in .env}
+#       SEED_CEO_PASSWORD: ${SEED_CEO_PASSWORD:-Admin@1234}
+#     volumes:
+#       - rootsgoods-data:/data
+#     expose:
+#       - "3000"
+#     # No public port: only the nginx proxy talks to the app.
+
+#   proxy:
+#     image: nginx:1.27-alpine
+#     restart: unless-stopped
+#     depends_on:
+#       - app
+#     ports:
+#      - "8081:80"
+#      - "8444:443"
+#     volumes:
+#       - ./deploy/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+#       # Mount your TLS certificate + key here (see DEPLOYMENT.md).
+#       - ./deploy/certs:/etc/nginx/certs:ro
+
+# volumes:
+#   rootsgoods-data:
 services:
   app:
     build: .
@@ -6,27 +38,12 @@ services:
       NODE_ENV: production
       PORT: "3000"
       DATA_DIR: /data
-      # Provide JWT_SECRET and SEED_CEO_PASSWORD via the .env file (same folder).
       JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET in .env}
       SEED_CEO_PASSWORD: ${SEED_CEO_PASSWORD:-Admin@1234}
     volumes:
       - rootsgoods-data:/data
-    expose:
-      - "3000"
-    # No public port: only the nginx proxy talks to the app.
-
-  proxy:
-    image: nginx:1.27-alpine
-    restart: unless-stopped
-    depends_on:
-      - app
     ports:
-     - "8081:80"
-     - "8444:443"
-    volumes:
-      - ./deploy/nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      # Mount your TLS certificate + key here (see DEPLOYMENT.md).
-      - ./deploy/certs:/etc/nginx/certs:ro
+      - "3000:3000"
 
 volumes:
   rootsgoods-data:
