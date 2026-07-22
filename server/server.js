@@ -176,5 +176,4 @@ app.use(express.static(PUBLIC_DIR));
 app.get('*', (req, res) => res.sendFile(path.join(PUBLIC_DIR, 'index.html')));
 
 const PORT = process.env.PORT || 3000;
-const HOST = "127.0.0.1";
-app.listen(PORT, HOST, () => console.log(`RootsGoods Finance server on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`RootsGoods Finance server on http://localhost:${PORT}`));
